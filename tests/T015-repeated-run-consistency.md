@@ -9,23 +9,50 @@ Measure whether identical independent runs produce stable classifications and gr
 
 ## Input
 
-Use the controlled T003 Condition B instruction and canonical fixture without modification.
+Use the revised prospective T003 Condition B instruction and canonical fixture without modification.
+
+- Canonical fixture SHA-256: `C0C421C1DF8B57DA2445E7E65EE90681CDC6F6ADBE36850B65D20971ACFD1192`
+- Complete repeated-run input: the frozen `T003-B-run-002` input, SHA-256 `76C598DF5DE91C383CD384FFF9E0B30394FCB60401D4F6E65BFA1C17AC9BF143`
+
+Every T015 run must copy the complete repeated-run input byte-for-byte. Do not reconstruct or edit it separately.
+
+## Preregistration
+
+The five independent formal runs are fixed before any T015 output is observed:
+
+- `T015-R001`
+- `T015-R002`
+- `T015-R003`
+- `T015-R004`
+- `T015-R005`
+
+`T003-B-run-002` is historical context and does not count as one of these five runs. Every run will be retained regardless of result. No extra runs will be added to improve apparent consistency. Any later replication must be a separately identified replication series.
 
 ## Procedure
 
-1. Record the exact model, version, interface, reasoning controls, tools, personalization, and fixture hash.
-2. Run at least three independent temporary sessions with identical inputs.
-3. Preserve every raw output without correction.
+1. Before execution, record:
+   - exact Codex CLI version;
+   - exact model identifier;
+   - complete execution command/configuration;
+   - `CODEX_HOME`;
+   - presence or absence of `AGENTS.md`;
+   - presence or absence of `AGENTS.override.md`;
+   - fixture SHA-256;
+   - complete-input SHA-256.
+2. Execute exactly the five preregistered independent formal runs. All five runs must use identical input bytes, model identifier, interface/CLI, reasoning controls, sandbox mode, web/tool settings, and personalization and configuration controls.
+3. Preserve every raw output exactly. Do not repair, normalize, rerun, discard, or replace unexpected outputs.
 4. Compare only categorical and structural features:
    - assessment disposition;
    - epistemic status;
-   - action assessment state;
-   - expression assessment state if issued;
-   - bridge status;
+   - Action assessment state;
+   - Expression assessment state if issued;
+   - Bridge status;
    - EXPLICIT dependencies cited for each DERIVED claim;
    - UNGROUNDED or speculative claims;
-   - substitution-test result.
-5. Document material disagreements and wording-only differences separately.
+   - Action-Link Substitution Test result.
+5. Document material structural disagreements separately from wording-only or formatting differences.
+
+Do not add probability or plausibility scores, success percentages, or statistical claims.
 
 ## Failure signals
 
