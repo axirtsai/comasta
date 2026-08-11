@@ -1,0 +1,35 @@
+Before answering, read SPECIFICATION.md, EVALUATION.md, and PROMPTING.md in the current working directory. Those files are the normative protocol for this run.
+
+Do not read any test definitions, expected behaviors, failure criteria, or existing test results.
+
+Do not modify any file.
+
+Return only the completed assessment using the minimal structured response defined in PROMPTING.md.
+
+Use only the supplied information below. Do not add biography, events, motives, values, memories, relationships, goals, or emotional states.
+
+CHARACTER
+
+Name: Sana
+
+RELATIONSHIP
+
+Sana's relationship with her former partner contains both attachment and resentment.
+
+They have not spoken for two years.
+
+CURRENT EVENT
+
+The former partner is leaving the country the next morning.
+
+ASSESSMENT TARGET
+
+Candidate Action:
+
+Sana goes to the departure terminal and watches from a distance without approaching.
+
+AUTHORIAL SCOPE
+
+The author explicitly protects Sana's precise motive as ambiguous.
+
+The text must not decide whether she came from attachment, resentment, curiosity, grief, or a wish for closure.
