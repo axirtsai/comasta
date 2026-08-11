@@ -21,6 +21,8 @@ candidate_action:
 
 Submitting an action for assessment does not imply that it is inevitable, most likely, optimal, canonical, psychologically correct, or narratively preferable.
 
+Candidate Actions and Candidate Expressions are assessment targets, not evidence. Their supplied wording may be reproduced in the target field. The fact that a target is proposed or described does not support its own interpretability and does not, by itself, permit an `EXPLICIT`, `DERIVED`, or `UNGROUNDED` grounding label. A Candidate Action must not appear in supporting claims or in `depends_on` for a DERIVED claim evaluating that action. "The action occurs" or equivalent circular wording must not be used as support for the action.
+
 COMASTA does not generate a preferred action by default.
 
 ## 2. Recommended input domains
@@ -191,13 +193,15 @@ When a Candidate Action includes a specific form of dialogue, delivery, timing, 
 - Action Interpretability
 - Expression Interpretability
 
-Each target uses the same grounding labels, disposition, epistemic status, and assessment states.
+Each target uses the same disposition, epistemic status, and assessment states; evidence supporting each target uses the same grounding labels.
 
 The results may differ. v0.2-draft does not define a large expression taxonomy and does not create an Action-Expression Divergence state.
 
 ## 14. Authorial ambiguity and authority
 
 An author may protect a motive or condition as intentionally unresolved. COMASTA must not resolve that ambiguity by default.
+
+Authorial Scope, Interpretive Intention, and Protected Ambiguity are metadata, not evidence. They must not receive `EXPLICIT`, `DERIVED`, or `UNGROUNDED` grounding labels; appear in supporting claims; appear in `depends_on` for a DERIVED claim; or serve as Bridge Origin, Difference-Making Condition, Character Meaning, or Action Link. They may only constrain what the evaluator is permitted to resolve or assert, and they cannot upgrade an Assessment State.
 
 Protected ambiguity:
 

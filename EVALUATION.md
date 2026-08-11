@@ -19,8 +19,8 @@ This permits multiple actions to remain interpretable without making every actio
 
 For each assessment target:
 
-1. Identify the Candidate Action or specific Expression.
-2. Inventory relevant EXPLICIT claims and assign identifiers.
+1. Identify the Candidate Action or specific Expression as the assessment target, not as evidence.
+2. Inventory relevant evidentiary EXPLICIT claims and assign identifiers, excluding the assessment target and authorial-scope metadata.
 3. Identify a grounded Baseline Conflict, or record `NONE ESTABLISHED`.
 4. State supporting DERIVED claims and list their EXPLICIT dependencies.
 5. Expose UNGROUNDED claims and non-evidentiary speculative interpretations.
@@ -35,6 +35,12 @@ For each assessment target:
 The order is intended to expose assumptions before classification.
 
 ## 3. Grounding rules
+
+Grounding labels apply to evidentiary claims, not to every item present in the input.
+
+Authorial Scope, Interpretive Intention, and Protected Ambiguity are metadata. Do not assign them `EXPLICIT`, `DERIVED`, or `UNGROUNDED`; include them in supporting claims; cite them in `depends_on`; use them as Bridge Origin, Difference-Making Condition, Character Meaning, or Action Link; or use them to upgrade an Assessment State. They may only constrain what the evaluator is permitted to resolve or assert.
+
+Candidate Actions and Candidate Expressions are assessment targets. Their supplied wording may be reproduced in the target field, but the fact that a target is proposed or described is not evidence for its own interpretability. Do not assign a Candidate Action a grounding label merely because it is the target, include it in supporting claims, or cite it in `depends_on` for a DERIVED claim evaluating that action.
 
 ### 3.1 EXPLICIT claims
 
@@ -102,6 +108,8 @@ Severity alone is insufficient. Character Meaning must not invent how the charac
 Explain why the grounded Character Meaning makes this particular Candidate Action interpretable.
 
 The Action Link must describe more than emotional intensity, unpredictability, or the fact that the action occurred.
+
+An Action Link may identify the Candidate Action it explains, but its support must come from independent grounded claims. Do not use "the action occurs" or equivalent circular wording as support for that action.
 
 ## 6. Bridge establishment rule
 

@@ -23,8 +23,8 @@ The model must keep separate:
 
 ## 3. Required procedure
 
-1. Read the Candidate Action and supplied assessment scope.
-2. Assign identifiers to relevant EXPLICIT claims.
+1. Read the Candidate Action and supplied assessment scope; treat them respectively as the assessment target and non-evidentiary metadata.
+2. Assign identifiers only to relevant evidentiary EXPLICIT claims, excluding the assessment target and authorial-scope metadata.
 3. Identify grounded supporting and conflicting conditions.
 4. Identify Baseline Conflict or `NONE ESTABLISHED`.
 5. For every DERIVED claim, list its EXPLICIT dependencies.
@@ -79,7 +79,11 @@ The model must not:
 - treat missing evidence as negative evidence;
 - resolve contradiction into one true motive;
 - use authorial intention as behavioral evidence;
+- assign Authorial Scope, Interpretive Intention, or Protected Ambiguity a grounding label, place it in supporting claims or `depends_on`, or use it as a Behavioral Bridge component;
 - use protected ambiguity to upgrade an assessment;
+- assign a Candidate Action or Candidate Expression a grounding label merely because it is the assessment target;
+- place a Candidate Action in supporting claims or in `depends_on` for a DERIVED claim evaluating that action;
+- use the fact that a Candidate Action is proposed, described, or occurs as support for that action;
 - automatically rewrite the character, dialogue, or scene.
 
 ## 6. Behavioral Bridge instruction
@@ -159,6 +163,8 @@ authorial_decision_reserved: true
 ```
 
 Omit the Behavioral Bridge object when no grounded Baseline Conflict exists. Set `assessment_state` to `null` when disposition is `WITHHELD`.
+
+The `target.candidate` field may reproduce the supplied Candidate Action or Candidate Expression without creating an evidentiary claim. Authorial-scope metadata may constrain the response but must remain outside `explicit_claims`, `derived_claims`, `ungrounded_claims`, their `depends_on` lists, and the Behavioral Bridge components.
 
 Every Unresolved Tension must cite grounded claims. Open Unknowns must be relevant to the current target.
 
