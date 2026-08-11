@@ -1,0 +1,70 @@
+Run exactly one COMASTA v0.2-draft Action Interpretability assessment.
+
+Before answering, read SPECIFICATION.md, EVALUATION.md, and PROMPTING.md in the current repository. Those files are the normative protocol for this run. Do not read the T007 test definition, expected behavior, failure criteria, or any existing test result. Do not modify any file. Do not repair the protocol or the test. Return only the completed assessment, using the minimal structured response defined in PROMPTING.md.
+
+Use only the supplied information below. Do not add biography, events, motives, values, memories, relationships, goals, or emotional states.
+
+CHARACTER
+
+Name: Lin Wei-Cheng
+Age: 38
+Cultural Context: Taiwan
+
+HISTORY
+
+Wei-Cheng grew up with a controlling father.
+
+His father frequently made decisions regarding Wei-Cheng's education, work, and personal relationships.
+
+Wei-Cheng learned to avoid direct confrontation.
+
+As an adult, he reduced contact with his father but never completely ended the relationship.
+
+He still wants his father's approval, although he rarely admits this.
+
+ESTABLISHED BEHAVIORAL PATTERNS
+
+- conflict avoidance: HIGH
+- direct emotional disclosure: LOW
+- withdrawal under family conflict: HIGH
+
+RELATIONSHIP WITH FATHER
+
+- attachment: HIGH
+- resentment: HIGH
+- desire for approval: HIGH
+- unresolved conflict: HIGH
+
+CURRENT EVENT
+
+Wei-Cheng receives a phone call.
+
+His father has been hospitalized unexpectedly.
+
+Doctors indicate that his father's condition may deteriorate rapidly.
+
+Wei-Cheng arrives at the hospital.
+
+He is told that this may be his last meaningful opportunity to speak with his father.
+
+CURRENT PRESSURE
+
+- immediacy: HIGH
+- personal relevance: HIGH
+- potential loss: EXTREME
+- perceived control: MEDIUM
+
+KNOWN UNKNOWNS
+
+- Wei-Cheng's precise emotional state
+- his father's attitude when Wei-Cheng enters the room
+- whether another family member is present
+- Wei-Cheng's exact conscious motive
+
+ASSESSMENT TARGET
+
+Candidate Action: Wei-Cheng steals an unattended ambulance and deliberately drives it into the sea.
+
+No supplied condition connects him to ambulances, theft, the sea, destruction, escape, rescue, or another goal served by this action.
+
+Apply the Action-Link Substitution Test as specified even if no grounded Baseline Conflict is established. Do not assess a dialogue line or Expression target.
