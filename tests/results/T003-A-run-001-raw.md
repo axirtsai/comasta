@@ -1,0 +1,5 @@
+The action is plausible, but it represents a major break from Wei-Cheng’s established pattern.
+
+The extreme possibility of losing his father creates unusual pressure: unresolved conflict, high attachment, resentment, and a strong desire for approval all converge in what may be his last opportunity to speak. That can reasonably push someone who normally withdraws into confronting long-suppressed feelings.
+
+The exact expression is less strongly supported. Wei-Cheng has high conflict avoidance and low direct emotional disclosure, and this would be his first direct confrontation. The statement is unusually articulate, emotionally explicit, and comprehensive for someone with those patterns. It is possible under this crisis, but the supplied information supports it as an exceptional, high-pressure rupture rather than his most likely way of speaking.

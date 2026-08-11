@@ -1,0 +1,75 @@
+Perform a COMASTA v0.2-draft assessment using the supplied Candidate Action.
+
+Do not predict behavior, assign probability, rank alternative actions, or invent information.
+
+Identify EXPLICIT claims. For every DERIVED claim, list the EXPLICIT claims on which it depends. Keep speculative interpretations separate from evidence and do not use UNGROUNDED claims as support.
+
+Identify grounded Baseline Conflict. If it exists, evaluate Bridge Origin, Difference-Making Condition, Character Meaning, and Action Link. Apply the Action-Link Substitution Test and return only BRIDGE ESTABLISHED or BRIDGE NOT ESTABLISHED.
+
+Separate Action Interpretability from Expression Interpretability. Identify grounded Unresolved Tensions and target-relevant Open Unknowns.
+
+For each target, return epistemic status, assessment disposition, and an assessment state only when issued. Preserve non-inevitability and authorial authority.
+CHARACTER
+
+Name: Lin Wei-Cheng
+Age: 38
+Cultural Context: Taiwan
+
+HISTORY
+
+Wei-Cheng grew up with a controlling father.
+
+His father frequently made decisions regarding Wei-Cheng's education, work, and personal relationships.
+
+Wei-Cheng learned to avoid direct confrontation.
+
+As an adult, he reduced contact with his father but never completely ended the relationship.
+
+He still wants his father's approval, although he rarely admits this.
+
+ESTABLISHED BEHAVIORAL PATTERNS
+
+- conflict avoidance: HIGH
+- direct emotional disclosure: LOW
+- withdrawal under family conflict: HIGH
+
+RELATIONSHIP WITH FATHER
+
+- attachment: HIGH
+- resentment: HIGH
+- desire for approval: HIGH
+- unresolved conflict: HIGH
+
+CURRENT EVENT
+
+Wei-Cheng receives a phone call.
+
+His father has been hospitalized unexpectedly.
+
+Doctors indicate that his father's condition may deteriorate rapidly.
+
+Wei-Cheng arrives at the hospital.
+
+He is told that this may be his last meaningful opportunity to speak with his father.
+
+CURRENT PRESSURE
+
+- immediacy: HIGH
+- personal relevance: HIGH
+- potential loss: EXTREME
+- perceived control: MEDIUM
+
+KNOWN UNKNOWNS
+
+- Wei-Cheng's precise emotional state
+- his father's attitude when Wei-Cheng enters the room
+- whether another family member is present
+- Wei-Cheng's exact conscious motive
+
+CANDIDATE ACTION AND EXPRESSION
+
+Wei-Cheng enters his father's hospital room and directly says:
+
+"You spent my whole life deciding for me. I don't know if I came here because I still love you or because I'm angry that you may leave before I ever get to say this."
+
+This is the first time Wei-Cheng has directly confronted his father.
