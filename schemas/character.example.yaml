@@ -1,10 +1,6 @@
-# COMASTA Character Example
-# Version: 0.1-draft
-# Status: Experimental
-#
-# This file demonstrates how a narrative character
-# may be described without reducing the character
-# to a single predicted behavior.
+# COMASTA Character Input Example
+# Version: 0.2-draft
+# Status: Experimental Specification - Not Yet Validated
 
 character:
   id: C001
@@ -15,72 +11,75 @@ character:
     cultural_context: Taiwan
 
   history:
-    formative_conditions:
-      - controlling_father
-      - repeated_parental_decision_making
-      - long_term_conflict_avoidance
+    explicit_claims:
+      - id: E1
+        claim: His father repeatedly made major decisions for him.
+      - id: E2
+        claim: He has historically avoided direct confrontation with his father.
+      - id: E2A
+        claim: He rarely discloses emotion directly during family conflict.
+      - id: E3
+        claim: He reduced contact but did not end the relationship.
+      - id: E4
+        claim: He still wants his father's approval, although he rarely admits it.
 
-    unresolved_conditions:
-      - paternal_resentment
-      - desire_for_paternal_approval
-
-  baseline_tendencies:
-    conflict_avoidance:
-      level: high
+  behavioral_patterns:
+    - id: B1
+      pattern: avoids direct confrontation with his father
+      grounding_claims: [E1, E2]
       deterministic: false
-
-    emotional_disclosure:
-      level: low
+    - id: B2
+      pattern: rarely discloses emotion directly in family conflict
+      grounding_claims: [E2A]
       deterministic: false
 
   relationships:
     father:
-      type: parent_child
-
-      conditions:
-        attachment: high
-        resentment: high
-        dependency: low
-        desire_for_approval: high
-
-      contradiction_allowed: true
+      explicit_claims:
+        - id: E5
+          claim: The relationship contains attachment.
+        - id: E6
+          claim: The relationship contains resentment.
+        - id: E7
+          claim: Their conflict remains unresolved.
 
   current_state:
-    emotional:
-      fear: unknown
-      anger: unknown
-      grief: unknown
+    emotional_state: unknown
+    physical_state: unknown
 
-    physical:
-      fatigue: unknown
-      injury: false
+situation:
+  explicit_claims:
+    - id: E8
+      claim: His father has been hospitalized unexpectedly.
+    - id: E9
+      claim: Doctors say his father's condition may rapidly deteriorate.
+    - id: E10
+      claim: Wei-Cheng has been told this may be his final meaningful opportunity to speak with his father.
 
-  context:
-    event: father_hospitalized
+known_unknowns:
+  - id: U1
+    claim: Wei-Cheng's precise current emotional state is unknown.
+    relevant_to:
+      - expression_interpretability
+  - id: U2
+    claim: His father's attitude when Wei-Cheng enters is unknown.
+    relevant_to:
+      - action_interpretability
+      - expression_interpretability
+  - id: U3
+    claim: Wei-Cheng's exact conscious motive is unknown.
+    relevant_to:
+      - action_interpretability
 
-    location:
-      current: unknown
-      target: hospital
+interpretive_scope:
+  preserve_ambiguity:
+    - U3
+  note: The precise motive should remain unresolved.
+  counts_as_behavioral_evidence: false
 
-    available_information:
-      father_condition_may_deteriorate_rapidly: true
-
-  pressure:
-    immediacy: high
-    personal_relevance: high
-    potential_loss: high
-    perceived_control: medium
-
-  uncertainty:
-    preserve: true
-
-    unknown_fields:
-      - current_state.emotional.fear
-      - current_state.emotional.anger
-      - current_state.emotional.grief
-
-  behavioral_policy:
-    history_is_deterministic: false
-    contradiction_is_error: false
-    unknown_is_valid: true
-    multiple_plausible_behaviors_allowed: true
+behavioral_policy:
+  history_is_deterministic: false
+  deviation_is_penalty: false
+  contradiction_is_error: false
+  unknown_may_be_silently_completed: false
+  multiple_actions_may_be_interpretable: true

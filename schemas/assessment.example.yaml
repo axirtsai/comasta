@@ -1,153 +1,106 @@
 # COMASTA Assessment Example
-# Version: 0.1-draft
-# Status: Experimental
+# Version: 0.2-draft
+# Status: Experimental Specification - Not Yet Validated
 #
-# This file demonstrates a structured assessment
-# of a proposed character behavior.
-#
-# An assessment explains available support,
-# conflict, missing context, and uncertainty.
-#
-# It does NOT predict what the character will do.
+# This example assesses current interpretive support. It does not predict
+# what the character will do and is not an observed test result.
 
 assessment:
   id: AS001
-
   references:
     character_id: C001
-    proposed_action_id: A001
+    candidate_action_id: A001
 
-  assessment_target:
-    behavior: confront_father
+  target:
+    type: action_interpretability
+    candidate: Wei-Cheng directly confronts his father at the hospital.
 
-  baseline:
-    established_tendency:
-      conflict_avoidance: high
+  explicit_claims:
+    - id: E2
+      claim: Wei-Cheng has historically avoided direct confrontation with his father.
+    - id: E4
+      claim: Wei-Cheng still wants his father's approval.
+    - id: E5
+      claim: The relationship contains attachment.
+    - id: E6
+      claim: The relationship contains resentment.
+    - id: E7
+      claim: Their conflict remains unresolved.
+    - id: E9
+      claim: His father's condition may rapidly deteriorate.
+    - id: E10
+      claim: This may be his final meaningful opportunity to speak with his father.
 
-    consistency_with_baseline: low
+  baseline_conflict:
+    established_pattern: avoids direct confrontation with his father
+    grounding: EXPLICIT
+    depends_on: [E2]
 
-    note: >
-      Direct confrontation conflicts with the character's
-      established pattern of avoiding conflict with his father.
+  derived_claims:
+    - id: D1
+      claim: The opportunity for direct conversation may soon disappear.
+      grounding: DERIVED
+      depends_on: [E9, E10]
+    - id: D2
+      claim: Continued silence now carries the possibility that the unresolved relationship will remain permanently unaddressed.
+      grounding: DERIVED
+      depends_on: [E5, E6, E7, E9, E10]
 
-  support:
+  ungrounded_claims: []
 
-    historical:
-      status: present
-
-      conditions:
-        - unresolved_paternal_resentment
-        - long_term_desire_for_paternal_approval
-
-      interpretation: >
-        The character's history contains unresolved relational
-        conditions that can meaningfully connect to confrontation.
-
-    relational:
-      status: strong
-
-      conditions:
-        - attachment_high
-        - resentment_high
-        - desire_for_approval_high
-
-      interpretation: >
-        The relationship contains unresolved attachment and resentment.
-        These conditions do not cancel each other and may jointly
-        contribute to the proposed action.
-
-    contextual:
-      status: strong
-
-      conditions:
-        - father_hospitalized
-        - possible_rapid_deterioration
-        - limited_time_to_respond
-
-      interpretation: >
-        The current situation creates a substantially different
-        decision environment from previous interactions.
-
-    pressure:
-      status: strong
-
-      dimensions:
-        immediacy: high
-        personal_relevance: high
-        potential_loss: high
-        perceived_control: medium
-
-      interpretation: >
-        The possibility of irreversible loss provides meaningful
-        support for behavioral deviation.
-
-  conflicts:
-
-    - condition: long_term_conflict_avoidance
-
-      role: baseline_conflict
-
-      interpretation: >
-        The proposed behavior remains inconsistent with a recurring
-        behavioral tendency and this conflict should remain visible.
-
-  internal_tensions:
-
-    - conditions:
-        - attachment_high
-        - resentment_high
-
-      resolution_required: false
-
-      interpretation: >
-        Attachment and resentment may remain simultaneously active.
-
-  missing_context:
-
-    - current_emotional_state
-    - immediate_trigger_at_hospital
-    - father's_current_behavior_toward_character
+  speculative_interpretations:
+    - Wei-Cheng may hope for reconciliation.
 
   behavioral_bridge:
+    bridge_origin:
+      claim: He has historically avoided direct confrontation with his father.
+      grounding: EXPLICIT
+      depends_on: [E2]
 
-    status: present
+    difference_making_condition:
+      claim: The opportunity for direct conversation may soon disappear.
+      grounding: DERIVED
+      depends_on: [E9, E10]
 
-    path:
-      - unresolved_attachment
-      - perceived_irreversible_loss
-      - increased_immediacy
-      - existing_avoidance_pattern_becomes_unstable
-      - direct_confrontation_becomes_understandable
+    character_meaning:
+      claim: The possible endpoint concerns an attached, resented, approval-relevant, and unresolved relationship.
+      grounding: DERIVED
+      depends_on: [E4, E5, E6, E7, E9, E10]
 
-    interpretation: >
-      Changed conditions provide an interpretable bridge between
-      the established avoidance pattern and the proposed confrontation.
+    action_link:
+      claim: Direct confrontation addresses the supplied unresolved conflict before direct conversation may become unavailable.
+      grounding: DERIVED
+      depends_on: [E2, E6, E7, E9, E10]
 
-  result:
+    substitution_test:
+      unrelated_action: Wei-Cheng steals an ambulance.
+      result: pass
+      explanation: The link specifically depends on addressing the father and their unresolved conflict; it does not explain ambulance theft.
 
-    state: PLAUSIBLE_DEVIATION
+    necessary_links_use_ungrounded_information: false
+    status: "BRIDGE ESTABLISHED"
+    gaps: []
 
-    explanation: >
-      Direct confrontation represents a meaningful departure from
-      the character's established avoidance pattern. However, unresolved
-      attachment, resentment, high relational relevance, and the possibility
-      of irreversible loss provide a coherent explanatory path for the
-      deviation.
+  unresolved_tensions:
+    - claim: Attachment and resentment remain simultaneously active.
+      grounding: EXPLICIT
+      depends_on: [E5, E6]
+    - claim: The direct confrontation conflicts with the established avoidance pattern.
+      grounding: EXPLICIT
+      depends_on: [E2]
 
-  uncertainty:
+  open_unknowns:
+    - Wei-Cheng's exact conscious motive remains unknown.
+    - His father's immediate response remains unknown.
 
-    inevitability: false
-    probability_assigned: false
-    most_likely_behavior_declared: false
-    alternative_behaviors_remain_valid: true
-    unknown_preserved: true
+  epistemic_status: "SUFFICIENT FOR TARGET"
+  assessment_disposition: ISSUED
+  assessment_state: "PLAUSIBLE DEVIATION"
 
-    statement: >
-      This assessment explains why confrontation can be understood.
-      It does not claim that confrontation is inevitable, most likely,
-      or the only plausible response.
+  non_inevitability_statement: >
+    The current material makes confrontation interpretable. It does not
+    predict that confrontation will occur, rank it as most likely, or
+    exhaust other possible actions.
 
-  creator_authority:
-
-    automatic_rewrite: false
-    final_interpretation_reserved_for_creator: true
+  author_questions: []
+  authorial_decision_reserved: true

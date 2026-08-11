@@ -1,75 +1,33 @@
-# COMASTA Proposed Action Example
-# Version: 0.1-draft
-# Status: Experimental
-#
-# This file describes a proposed narrative action.
-# It does not claim that the character will perform the action.
+# COMASTA Candidate Action Example
+# Version: 0.2-draft
+# Status: Experimental Specification - Not Yet Validated
 
-proposed_action:
+candidate_action:
   id: A001
-
-  actor:
-    character_id: C001
+  actor_id: C001
 
   action:
-    type: confrontation
+    description: Wei-Cheng directly confronts his father at the hospital about years of control.
     target: father
+    timing: before the possible loss of another meaningful conversation
 
-    description: >
-      Lin Wei-Cheng goes to the hospital and directly confronts
-      his father about years of control for the first time.
-
-  timing:
-    moment: before_possible_irreversible_loss
-
-  intentionality:
-    known: false
-
-    possible_motives:
-      - unresolved_resentment
-      - fear_of_permanent_loss
-      - desire_to_be_acknowledged
-
-    motive_is_determined: false
+  expression:
+    supplied: false
+    description: null
 
 assessment_request:
-
-  purpose: plausibility_analysis
-
-  evaluate:
-    - historical_support
-    - relational_support
-    - contextual_support
-    - pressure_support
-    - baseline_conflict
-    - internal_tension
-    - missing_context
-    - behavioral_bridge
-    - uncertainty
+  targets:
+    - action_interpretability
 
   prediction_requested: false
-
   probability_requested: false
-
   ranking_requested: false
-
   automatic_rewrite_requested: false
 
   preserve_unknown: true
-
   preserve_contradiction: true
 
 constraints:
-
-  do_not_assume:
-    - most_likely_behavior
-    - inevitable_behavior
-    - single_true_motive
-    - complete_character_knowledge
-
-  allow:
-    - multiple_interpretations
-    - conflicting_motives
-    - behavioral_deviation
-    - insufficient_context
-    - unknown_outcome
+  authorial_intention_is_evidence: false
+  speculative_interpretations_are_evidence: false
+  ungrounded_claims_may_support_bridge: false

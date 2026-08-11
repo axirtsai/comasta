@@ -1,228 +1,95 @@
-# Case 001 — History Is Not Destiny
+# Case 001 - History Is Not Destiny
 
-**Status:** Experimental  
-**Principles Tested:** P01, P02, P04, P05, P07
+**Version:** 0.2-draft
+**Status:** Illustrative Example - Not an Observed Test Result
 
 ## Purpose
 
-This case tests whether the same known character history can support multiple different behaviors without declaring one behavior inevitable.
+This example demonstrates that one history and situation may provide different grounded explanatory paths for different Candidate Actions without predicting which action will occur.
 
-The purpose is not to determine what the character will do.
+> A character's history may shape future behavior without determining it.
 
-The purpose is to examine whether different proposed actions can each remain understandable under the available conditions.
+## Supplied character information
 
----
+Wei-Cheng, 38, grew up with a controlling father who repeatedly made major decisions for him. Wei-Cheng historically avoids direct confrontation, rarely discloses emotion during family conflict, and reduced contact without ending the relationship.
 
-# Character
+He still wants his father's approval. Their relationship contains attachment, resentment, and unresolved conflict.
 
-**Name:** Lin Wei-Cheng  
-**Age:** 38  
-**Location:** Taiwan
+His father has been hospitalized unexpectedly. Doctors say the condition may rapidly deteriorate, and Wei-Cheng is told this may be his final meaningful opportunity to speak with him.
 
-Wei-Cheng grew up with a controlling father.
+Wei-Cheng's precise emotional state, exact conscious motive, and his father's immediate attitude are unknown.
 
-His father frequently made major decisions for him, including education, work, and relationships.
+## Candidate Action A - Refuses to go
 
-Wei-Cheng rarely confronted his father directly.
+Possible grounded support includes established withdrawal, resentment, and avoidance of direct family conflict.
 
-As an adult, he reduced contact with his family but never completely ended the relationship.
+- Baseline Conflict: none necessarily established for refusal.
+- Epistemic Status: `SUFFICIENT FOR TARGET`.
+- Disposition: `ISSUED`.
+- Assessment: `SUPPORTED`.
 
-He still seeks his father's approval, although he rarely admits it.
+This does not make refusal inevitable or most likely.
 
----
+## Candidate Action B - Goes immediately
 
-# Current Event
+Possible grounded support includes attachment, remaining desire for approval, the possible irreversible loss of contact, and high immediacy.
 
-Wei-Cheng receives a phone call.
+- Baseline Conflict: the action departs from reduced contact but does not necessarily conflict with a stable refusal pattern.
+- Epistemic Status: `SUFFICIENT FOR TARGET`.
+- Disposition: `ISSUED`.
+- Assessment: `SUPPORTED`.
 
-His father has been hospitalized unexpectedly.
+This does not establish reconciliation as his motive.
 
-Doctors say his condition may deteriorate rapidly.
+## Candidate Action C - Goes but remains silent
 
-Wei-Cheng is asked whether he will come to the hospital.
+Attachment can support presence while established avoidance and low emotional disclosure support silence. Resentment remains active and need not be resolved.
 
----
+- Baseline Conflict: `NONE ESTABLISHED` for silent presence.
+- Unresolved Tension: attachment and resentment remain simultaneously grounded.
+- Epistemic Status: `SUFFICIENT FOR TARGET`.
+- Disposition: `ISSUED`.
+- Assessment: `SUPPORTED`.
 
-# Known Conditions
+## Candidate Action D - Directly confronts his father
 
-## History
+### Baseline Conflict
 
-- Long-term paternal control
-- Repeated avoidance of direct confrontation
-- Unresolved resentment
-- Persistent desire for paternal approval
+Direct confrontation conflicts with Wei-Cheng's established avoidance and low direct emotional disclosure.
 
-## Relationship
+### Behavioral Bridge
 
-Father / son
+1. **Bridge Origin:** established direct-conflict avoidance.
+2. **Difference-Making Condition:** a final meaningful conversation may soon become unavailable.
+3. **Character Meaning:** the possible endpoint concerns an attached, resented, approval-relevant, and unresolved relationship.
+4. **Action Link:** confrontation directly addresses the supplied unresolved conflict before direct conversation may become unavailable.
 
-The relationship contains both attachment and resentment.
+The Action Link does not explain an unrelated substituted action such as stealing an ambulance. No necessary link requires an invented motive.
 
-## Current Pressure
+- Bridge Status: `BRIDGE ESTABLISHED`.
+- Epistemic Status: `SUFFICIENT FOR TARGET`.
+- Disposition: `ISSUED`.
+- Assessment: `PLAUSIBLE DEVIATION`.
 
-**Immediacy:** HIGH  
-The decision must be made soon.
+The prior avoidance remains true. This assessment does not imply that confrontation will occur.
 
-**Potential Loss:** HIGH  
-Wei-Cheng may lose the opportunity to see his father again.
+## Candidate Action E - An unrelated destructive act
 
-**Personal Relevance:** HIGH  
-The event concerns one of his most formative relationships.
+Suppose the Candidate Action is instead that Wei-Cheng deliberately destroys unrelated hospital equipment without any supplied connection to his father, the unresolved relationship, or an immediate goal.
 
-**Perceived Control:** MEDIUM  
-Wei-Cheng can choose whether to go.
+Emotional severity alone is too generic to establish an Action Link. A statement such as "anything can happen under pressure" fails the Action-Link Substitution Test.
 
----
+- Bridge Status: `BRIDGE NOT ESTABLISHED`.
+- Epistemic Status: `SUFFICIENT FOR TARGET`.
+- Disposition: `ISSUED`.
+- Assessment: `UNSUPPORTED`.
 
-# Proposed Behavior A — Refuses to Go
+This means only that the current material does not support that interpretation. It does not mean no person could ever perform the act.
 
-Wei-Cheng decides not to visit the hospital.
+## Open Unknowns
 
-## Possible Support
+Other responses remain open. The listed actions do not exhaust the character's possible behavior, and COMASTA does not select one as the character's true future.
 
-- Long-term resentment
-- Desire to regain control over his own life
-- Avoidance of emotionally difficult confrontation
+## Action and Expression
 
-## Assessment
-
-**PLAUSIBLE**
-
-His history provides sufficient conditions for refusal to remain understandable.
-
-This does not mean refusal is inevitable.
-
----
-
-# Proposed Behavior B — Goes Immediately
-
-Wei-Cheng leaves immediately for the hospital.
-
-## Possible Support
-
-- Persistent attachment
-- Fear of irreversible loss
-- Remaining desire for paternal recognition
-- Increased pressure caused by limited time
-
-## Assessment
-
-**PLAUSIBLE**
-
-This behavior differs from avoidance but remains supported by the relationship and current pressure.
-
----
-
-# Proposed Behavior C — Goes but Says Nothing
-
-Wei-Cheng visits his father but remains emotionally distant.
-
-## Possible Support
-
-- Attachment motivates physical presence
-- Avoidance inhibits confrontation
-- Resentment prevents emotional reconciliation
-
-## Assessment
-
-**PLAUSIBLE**
-
-Contradictory emotional conditions may coexist without requiring resolution.
-
----
-
-# Proposed Behavior D — Confronts His Father
-
-Wei-Cheng goes to the hospital and directly confronts his father for the first time.
-
-## Baseline Consistency
-
-**LOW**
-
-Direct confrontation conflicts with his established behavioral tendency.
-
-## Contextual Support
-
-**HIGH**
-
-The possibility of permanent loss creates an unusual condition.
-
-## Assessment
-
-**PLAUSIBLE DEVIATION**
-
-Low consistency does not automatically mean low human plausibility.
-
----
-
-# Proposed Behavior E — Unknown Response
-
-The available information may still fail to anticipate Wei-Cheng's actual response.
-
-He may behave in a way not represented by A–D.
-
-## Assessment
-
-**UNKNOWN REMAINS VALID**
-
-The model should not assume that the listed possibilities exhaust human behavior.
-
----
-
-# Experimental Result
-
-The same known history supports multiple distinct behaviors:
-
-| Behavior | Consistency | Plausibility |
-|---|---|---|
-| Refuses to go | High | Plausible |
-| Goes immediately | Medium | Plausible |
-| Goes but remains silent | High | Plausible |
-| Confronts father | Low | Plausible Deviation |
-| Other / unknown | Unknown | Preserved |
-
-## Observation
-
-Character history narrows interpretation but does not produce a single mandatory future action.
-
-A behavior can have low consistency with previous patterns while remaining understandable under changed conditions.
-
-Therefore:
-
-> History can shape the possibility space without determining a single outcome.
-
----
-
-# 繁體中文摘要
-
-## 案例目的
-
-本案例測試：
-
-> 相同的人物歷史，是否可以同時支持多種不同、甚至彼此相反，但仍然可以理解的行為？
-
-林偉成長期受到父親控制，成年後習慣逃避與父親直接衝突。
-
-當父親突然病危，他可能：
-
-1. 拒絕前往醫院；
-2. 立刻前往醫院；
-3. 前往醫院但保持沉默；
-4. 第一次直接與父親衝突；
-5. 做出目前資料無法預先涵蓋的其他行為。
-
-前四種行為都可能從人物既有條件中取得不同程度的支持。
-
-因此，COMASTA 不將人物歷史視為唯一未來行為的決定器。
-
-特別是第四種情況：
-
-**角色一致性低，不代表人的行為成立性低。**
-
-人物可能偏離既有行為模式，而這個偏離本身仍然受到當下關係、壓力與不可逆後果支持。
-
-本案例因此暫時支持：
-
-> 歷史可以塑造可能性空間，但不決定唯一結果。
-
-同時，案例仍保留 `UNKNOWN`，因為目前列出的行為不應被視為人物所有可能行為的完整集合。
+If Candidate Action D includes a specific polished monologue, its Expression Interpretability should be evaluated separately. Support for confrontation does not automatically support the exact fluency, vocabulary, rhythm, or degree of self-analysis.

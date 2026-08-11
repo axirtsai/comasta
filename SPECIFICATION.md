@@ -1,556 +1,242 @@
-# COMASTA Character Plausibility Specification
+# COMASTA Character Action Interpretability Specification
 
-**Version:** 0.1-draft  
-**Status:** Experimental
+**Version:** 0.2-draft
+**Status:** Experimental Specification - Not Yet Validated
 
-COMASTA evaluates whether a proposed character behavior can be understood from the character's available conditions.
+COMASTA evaluates whether an externally supplied Candidate Action can currently be understood from grounded character and situational information.
 
-It does not determine what a character will do.
+It is not a character generator, personality model, psychological model, behavior prediction engine, probability system, or replacement for authorial judgment.
 
-The current specification is designed for narrative character development, screenwriting, and AI-assisted narrative reasoning.
+> **A character's history may shape future behavior without determining it.**
 
----
+## 1. Assessment target
 
-# 1. Assessment Target
+Every assessment begins with a Candidate Action supplied by the author or calling application.
 
-Every assessment begins with a proposed behavior.
+```yaml
+candidate_action:
+  actor: Wei-Cheng
+  action: confronts his father directly at the hospital
+```
 
-Example:
+Submitting an action for assessment does not imply that it is inevitable, most likely, optimal, canonical, psychologically correct, or narratively preferable.
 
-`PROPOSED ACTION: The character confronts his father.`
+COMASTA does not generate a preferred action by default.
 
-COMASTA evaluates the proposed action against the available character conditions.
+## 2. Recommended input domains
 
-The question is:
+A v0.2-draft input may contain:
 
-> Can this behavior be reasonably understood from the available conditions?
+- character history;
+- established behavioral patterns;
+- relationships;
+- current state;
+- immediate context;
+- pressures and stakes;
+- a Candidate Action;
+- known unknowns;
+- optional interpretive scope or protected ambiguity.
 
-The question is NOT:
+Input must distinguish supplied information from unknown information. An unknown value is not permission to infer the value most convenient to the assessment.
 
-> Will this character perform this behavior?
+Authorial intention may define scope, for example that precise motive must remain unresolved. It is not behavioral evidence.
 
----
+## 3. Pattern Consistency and Action Interpretability
 
-# 2. Input Domains
+COMASTA separates:
 
-COMASTA v0.1 uses the following domains.
+- **Pattern Consistency:** whether an action resembles established behavior;
+- **Action Interpretability:** whether the action can be understood from grounded current conditions.
 
-## 2.1 History
+These are not equivalent. Deviation is descriptive, not a penalty.
 
-Known past experiences and behavioral patterns.
+## 4. Baseline Conflict
 
-Examples:
+Baseline Conflict identifies a grounded established pattern with which the Candidate Action conflicts.
 
-- previous decisions
-- formative experiences
-- repeated behavior
-- unresolved events
-- learned responses
+```yaml
+baseline_conflict:
+  established_pattern: avoids direct confrontation with his father
+  candidate_action: directly confronts his father
+```
 
-History provides evidence.
+A baseline must be supported by supplied history or repeated behavior. COMASTA must not invent a stable trait from a single unrelated event.
 
-History does not determine the future.
+If no relevant baseline is established, the assessment records `NONE ESTABLISHED` or omits Behavioral Bridge evaluation. It must not create a conflict merely to fill an output field.
 
----
+Baseline Conflict does not reduce a score. COMASTA has no behavioral plausibility score.
 
-## 2.2 Relationship
+## 5. Grounding labels
 
-The character's relationship to the people involved in the current event.
+Every major claim used as assessment support has one grounding label.
 
-Possible dimensions include:
+### EXPLICIT
 
-- attachment
-- resentment
-- dependency
-- trust
-- fear
-- obligation
-- unresolved conflict
+Directly supplied by the source material.
 
-Opposing relationship states may coexist.
+### DERIVED
 
-Example:
+A bounded interpretation traceable to supplied information. Every DERIVED claim must identify the EXPLICIT claim identifiers on which it depends.
 
-`attachment: HIGH`  
-`resentment: HIGH`
+DERIVED does not mean psychologically conventional, intuitively likely, or generally human. It must remain close to the supplied material.
 
-This is not automatically considered inconsistent data.
+### UNGROUNDED
 
----
+A claim requiring information not supplied by the source material.
 
-## 2.3 Current State
+UNGROUNDED claims cannot serve as supporting evidence or as necessary Behavioral Bridge links.
 
-The character's condition at the moment of action.
+### Speculative interpretations
 
-Possible dimensions include:
+Speculative interpretations may be displayed in a separate section as possibilities. They are not grounding labels, do not count as supporting evidence, and cannot upgrade an assessment.
 
-- emotional state
-- physical state
-- fatigue
-- attention
-- immediate desire
-- immediate fear
+## 6. Behavioral Bridge
 
-Current state must not automatically override history.
+When a Candidate Action conflicts with a grounded baseline, COMASTA evaluates a Behavioral Bridge containing:
 
-History must not automatically override current state.
+1. Bridge Origin
+2. Difference-Making Condition
+3. Character Meaning
+4. Action Link
 
----
+The only valid bridge statuses are:
 
-## 2.4 Context
+- `BRIDGE ESTABLISHED`
+- `BRIDGE NOT ESTABLISHED`
 
-The immediate external situation surrounding the proposed behavior.
+A bridge may be established only when:
 
-Examples:
+- the baseline is grounded;
+- the Difference-Making Condition is grounded;
+- Character Meaning is traceable to supplied information;
+- the Action Link specifically explains the Candidate Action;
+- no necessary link depends on UNGROUNDED information;
+- the Action Link passes the Action-Link Substitution Test defined in EVALUATION.md.
 
-- location
-- presence of other people
-- available information
-- social circumstances
-- immediate opportunity
-- environmental constraints
+`BRIDGE NOT ESTABLISHED` means that the current material does not establish the required path. It does not mean that no human explanation could exist.
 
-Context can alter which behaviors become plausible.
+Multiple different Candidate Actions may each have distinct valid bridges. A bridge explains interpretability, not probability.
 
----
+## 7. Core assessment states
 
-## 2.5 Pressure
+### SUPPORTED
 
-Pressure describes conditions that may increase the plausibility of behavioral deviation.
+The Candidate Action can be responsibly understood from grounded information without requiring a significant unexplained departure from an established pattern.
 
-Pressure is not a measurement of the person.
+### PLAUSIBLE DEVIATION
 
-COMASTA v0.1 evaluates pressure using four dimensions:
+The Candidate Action conflicts with a grounded established pattern, and a `BRIDGE ESTABLISHED` result makes that departure interpretable.
 
-### Immediacy
+The baseline remains valid. The action does not prove that the character has permanently changed or overcome the prior pattern.
 
-How soon must the character respond?
+### UNSUPPORTED
 
-`LOW` — no immediate response is required  
-`MEDIUM` — delay has meaningful consequences  
-`HIGH` — a decision is required soon  
-`EXTREME` — the opportunity or threat is immediate
+The current material does not provide grounded support for the Candidate Action, or a required Behavioral Bridge is not established.
 
-### Personal Relevance
+UNSUPPORTED does not mean impossible, prohibited, badly written, or contrary to what a real person could do.
 
-How strongly does the event involve something important to this character?
+## 8. Assessment disposition
 
-`LOW` — peripheral to the character  
-`MEDIUM` — personally meaningful  
-`HIGH` — connected to an important relationship, value, identity, or desire  
-`EXTREME` — connected to something the character experiences as fundamental
+### ISSUED
 
-### Potential Loss
+The available material permits one of the three core assessment states to be issued.
 
-What may become unavailable or irreversible if the character does not act?
+### WITHHELD
 
-`LOW` — little meaningful loss  
-`MEDIUM` — recoverable loss  
-`HIGH` — significant or difficult-to-reverse loss  
-`EXTREME` — perceived permanent or fundamental loss
+A specific critical unknown prevents a responsible distinction between support and non-support. When disposition is `WITHHELD`, no core assessment state is issued.
 
-### Perceived Control
+`WITHHELD` is not a fourth assessment state.
 
-How much alternative choice does the character believe remains available?
+## 9. Epistemic status
 
-`HIGH` — many alternatives appear available  
-`MEDIUM` — alternatives exist but are constrained  
-`LOW` — few meaningful alternatives appear available  
-`MINIMAL` — the character perceives almost no alternative
+### SUFFICIENT FOR TARGET
 
----
+The supplied information is sufficient for the limited assessment target. This does not mean the character is fully known or that all uncertainty has been eliminated.
 
-# 3. Important Rule About Levels
+### CRITICAL CONTEXT MISSING
 
-LOW, MEDIUM, HIGH, and EXTREME are ordinal descriptive categories.
+One or more identified missing facts materially determine whether the proposed interpretation can be grounded. Selecting a value for the missing fact would fabricate information.
 
-They are not claims of objective psychological measurement.
+This normally requires disposition `WITHHELD`.
 
-For example:
+## 10. Unsupported versus critical missing context
 
-`pressure: HIGH`
+Missing evidence is not negative evidence.
 
-does NOT mean:
+- Use `UNSUPPORTED` when the current record is assessable but contains no grounded support for the action or required bridge.
+- Use `WITHHELD` with `CRITICAL CONTEXT MISSING` when a specific missing fact controls whether the claimed support or bridge exists.
 
-`pressure = 80/100`
+An evaluator must identify the critical fact and explain why different possible values would materially change the assessment. General statements such as "More information might help" are insufficient for withholding.
 
-The level describes the relationship between the event and the known character conditions.
+## 11. Open Unknowns
 
-The same event may therefore produce different pressure assessments for different characters.
+Open Unknowns list unresolved information relevant to the current target. They must not become assumed facts.
 
----
+An assessment must not attempt to inventory every unknown aspect of a person. Non-relevant unknowns are omitted.
 
-# 4. Baseline Behavioral Tendency
+## 12. Unresolved Tensions
 
-COMASTA may describe an established behavioral tendency.
+Unresolved Tensions identify grounded conditions that remain simultaneously active and pull in different directions.
 
-Example:
+They do not require resolution. They also cannot contain invented future feelings, hypothetical regret, or hidden motives unless those are explicitly supplied.
 
-`conflict_avoidance: HIGH`
+Contradiction alone does not create Baseline Conflict and does not automatically require a Behavioral Bridge.
 
-This means the available history strongly supports conflict avoidance as a recurring pattern.
+## 13. Action and Expression Interpretability
 
-It does NOT mean:
+The primary target is Action Interpretability.
 
-`if conflict → character must avoid`
+When a Candidate Action includes a specific form of dialogue, delivery, timing, or physical expression, the assessment may separate:
 
-Behavioral tendencies are evidence, not deterministic instructions.
+- Action Interpretability
+- Expression Interpretability
 
----
+Each target uses the same grounding labels, disposition, epistemic status, and assessment states.
 
-# 5. Support and Conflict
+The results may differ. v0.2-draft does not define a large expression taxonomy and does not create an Action-Expression Divergence state.
 
-A proposed behavior may contain both supporting and conflicting evidence.
+## 14. Authorial ambiguity and authority
 
-Example:
+An author may protect a motive or condition as intentionally unresolved. COMASTA must not resolve that ambiguity by default.
 
-PROPOSED ACTION:
+Protected ambiguity:
 
-`Confront father`
+- limits the scope of interpretation;
+- does not count as behavioral evidence;
+- cannot establish a Behavioral Bridge;
+- cannot upgrade an unsupported action.
 
-Supporting conditions:
+The author retains final interpretive authority and may deliberately choose an unsupported or partially unexplained action.
 
-- fear of irreversible loss
-- unresolved resentment
-- high personal relevance
-- high immediacy
+## 15. Non-inevitability requirement
 
-Conflicting condition:
+Every issued assessment must preserve the following boundary:
 
-- long-term conflict avoidance
+> This assessment describes current interpretive support. It does not predict that the action will occur, identify it as most likely, or exhaust other possible actions.
 
-COMASTA preserves both.
+## 16. Minimal assessment output
 
-Conflicting evidence must not automatically cancel supporting evidence.
+A complete action assessment contains:
 
----
+- Candidate Action;
+- relevant Baseline Conflict or `NONE ESTABLISHED`;
+- grounded supporting claims and their grounding labels;
+- EXPLICIT dependencies for every DERIVED claim;
+- relevant UNGROUNDED claims;
+- any speculative interpretations in a non-evidentiary section;
+- Behavioral Bridge when required;
+- relevant Open Unknowns;
+- grounded Unresolved Tensions;
+- epistemic status;
+- assessment disposition;
+- assessment state when issued;
+- non-inevitability statement;
+- authorial authority statement.
 
-# 6. Assessment States
+Optional Author Questions may expose critical missing information. Unanswered questions remain unknown.
 
-COMASTA v0.1 allows the following assessment states.
+## 17. Validation boundary
 
-## SUPPORTED
+COMASTA v0.2-draft is an experimental specification. Its structure is intended to make interpretive assumptions more visible and bounded.
 
-The proposed behavior has meaningful support from the available conditions and does not require a major unexplained deviation.
-
-## WEAKLY SUPPORTED
-
-Some conditions support the behavior, but important explanatory gaps remain.
-
-## PLAUSIBLE DEVIATION
-
-The behavior conflicts with an established tendency, but changed conditions provide meaningful support for the deviation.
-
-## CONTRADICTORY BUT PLAUSIBLE
-
-The behavior emerges from conditions that remain internally conflicting, while the action itself can still be understood.
-
-The contradiction does not need to be resolved.
-
-## INSUFFICIENT CONTEXT
-
-The available information is not sufficient to responsibly assess the proposed behavior.
-
-## UNSUPPORTED
-
-The proposed behavior currently lacks meaningful support from the supplied character conditions.
-
-`UNSUPPORTED` does not mean impossible.
-
-It means the current model does not have enough supporting conditions to explain the action.
-
----
-
-# 7. No Inevitability Rule
-
-No assessment state may imply inevitability.
-
-Therefore:
-
-`SUPPORTED`
-
-does NOT mean:
-
-`WILL HAPPEN`
-
-and:
-
-`UNSUPPORTED`
-
-does NOT mean:
-
-`CANNOT HAPPEN`
-
-COMASTA evaluates interpretive support, not future certainty.
-
----
-
-# 8. Multiple Valid Behaviors
-
-More than one proposed behavior may receive:
-
-`SUPPORTED`
-
-or:
-
-`PLAUSIBLE DEVIATION`
-
-under the same character conditions.
-
-This is intentional.
-
-The system must not automatically rank one behavior as the character's "true" future action.
-
----
-
-# 9. Unknown Preservation
-
-The set of behaviors evaluated by COMASTA must not be treated as an exhaustive list of human possibilities.
-
-Even when several plausible behaviors have been identified:
-
-`UNKNOWN`
-
-remains conceptually available.
-
-A character may still act in a way not represented by the current model.
-
----
-
-# 10. Minimal Assessment Output
-
-A COMASTA-compatible assessment should contain at least:
-
-- proposed behavior
-- supporting conditions
-- conflicting conditions
-- missing information
-- assessment state
-- explanation
-- uncertainty statement
-
-Example:
-
-    Proposed Behavior:
-    Confront father
-
-    Supporting Conditions:
-    - Potential Loss: HIGH
-    - Personal Relevance: HIGH
-    - Unresolved Resentment: HIGH
-
-    Conflicting Conditions:
-    - Conflict Avoidance: HIGH
-
-    Missing Information:
-    - Current emotional state
-
-    Assessment:
-    PLAUSIBLE DEVIATION
-
-    Explanation:
-    The action conflicts with the character's established avoidance pattern,
-    but the possibility of irreversible loss provides meaningful contextual
-    support for behavioral deviation.
-
-    Uncertainty:
-    This assessment does not imply that confrontation is the character's
-    inevitable or most likely action.
-
----
-
-# 繁體中文
-
-# COMASTA 角色行為成立性規格
-
-**版本：** 0.1-draft  
-**狀態：** 實驗中
-
-COMASTA 評估的是：
-
-> 作者提出的某項人物行為，能否從目前已知的人物生命條件中得到理解。
-
-COMASTA 不決定角色將會做什麼。
-
----
-
-## 1. 評估對象
-
-每一次 COMASTA 評估，都必須先存在一個「提出的行為」。
-
-例如：
-
-`提出行為：角色第一次與父親正面衝突。`
-
-系統詢問：
-
-> 目前條件是否足以讓我們理解這個行為？
-
-而不是：
-
-> 這個角色會不會這樣做？
-
----
-
-## 2. 基本輸入領域
-
-COMASTA v0.1 暫時使用：
-
-- 歷史 History
-- 關係 Relationship
-- 當下狀態 Current State
-- 情境 Context
-- 壓力 Pressure
-
-這些資料共同構成人物當下的條件。
-
-任何單一領域都不應自動取得決定人物行為的權力。
-
----
-
-## 3. 壓力
-
-壓力不是對人物進行心理數值測量。
-
-COMASTA v0.1 將壓力拆成：
-
-- 迫切性 Immediacy
-- 個人關聯 Personal Relevance
-- 潛在失去 Potential Loss
-- 感知控制 Perceived Control
-
-LOW、MEDIUM、HIGH、EXTREME 是順序性的描述類別，而不是客觀心理分數。
-
-因此：
-
-`HIGH`
-
-不代表：
-
-`80/100`
-
-而是代表目前事件與這個特定人物之間，已經形成高度相關的條件。
-
----
-
-## 4. 行為傾向不是指令
-
-例如：
-
-`逃避衝突：HIGH`
-
-只代表既有資料高度支持「逃避衝突」是人物反覆出現的行為傾向。
-
-它不代表：
-
-`發生衝突 → 必須逃避`
-
-歷史傾向只能作為理解行為的證據。
-
----
-
-## 5. 支持與衝突可以共存
-
-同一項行為可以同時具有：
-
-`Supporting Conditions`
-
-以及：
-
-`Conflicting Conditions`
-
-COMASTA 不應為了得到乾淨答案，而自動消除其中一方。
-
----
-
-## 6. 評估狀態
-
-COMASTA v0.1 暫定六種主要狀態：
-
-`SUPPORTED`
-
-目前條件對該行為具有明確支持。
-
-`WEAKLY SUPPORTED`
-
-存在支持，但仍有重要解釋缺口。
-
-`PLAUSIBLE DEVIATION`
-
-行為偏離人物既有模式，但當下條件足以支持這次偏離。
-
-`CONTRADICTORY BUT PLAUSIBLE`
-
-人物內部條件仍然彼此矛盾，但行為仍可被理解。
-
-`INSUFFICIENT CONTEXT`
-
-資訊不足，不應製造確定答案。
-
-`UNSUPPORTED`
-
-目前資料缺乏足夠條件支持這項行為。
-
-UNSUPPORTED 不代表「人不可能這樣做」。
-
-它只代表：
-
-> 目前提供給系統的資料，還不足以解釋這項行為。
-
----
-
-## 7. 禁止必然性
-
-任何 COMASTA 評估結果都不得直接等同於未來必然結果。
-
-因此：
-
-`SUPPORTED ≠ WILL HAPPEN`
-
-`UNSUPPORTED ≠ CANNOT HAPPEN`
-
-COMASTA 評估的是理解與成立條件，不是宣判人物未來。
-
----
-
-## 8. 多重結果
-
-在相同人物條件下，可以同時存在多個：
-
-`SUPPORTED`
-
-或：
-
-`PLAUSIBLE DEVIATION`
-
-這不是系統錯誤，而是設計目的之一。
-
----
-
-## 9. 保留未知
-
-即使 COMASTA 已經找到多種成立行為，也不應宣稱這些行為已經窮盡人物的所有可能。
-
-因此：
-
-`UNKNOWN`
-
-必須持續保有概念上的位置。
-
----
-
-## 10. 最小輸出
-
-每次 COMASTA 評估至少應包含：
-
-- 提出的行為
-- 支持條件
-- 衝突條件
-- 缺失資訊
-- 評估狀態
-- 解釋
-- 不確定性聲明
-
-COMASTA 的目的不是找到唯一正確的人物行為。
-
-它的目的，是讓人物行為可以被結構化地理解，同時避免將理解誤認為預測。
+The current repository does not contain controlled evidence that v0.2 improves underlying language-model reasoning.

@@ -1,0 +1,86 @@
+# COMASTA Character Example
+# Version: 0.1-draft
+# Status: Experimental
+#
+# This file demonstrates how a narrative character
+# may be described without reducing the character
+# to a single predicted behavior.
+
+character:
+  id: C001
+
+  identity:
+    name: Lin Wei-Cheng
+    age: 38
+    cultural_context: Taiwan
+
+  history:
+    formative_conditions:
+      - controlling_father
+      - repeated_parental_decision_making
+      - long_term_conflict_avoidance
+
+    unresolved_conditions:
+      - paternal_resentment
+      - desire_for_paternal_approval
+
+  baseline_tendencies:
+    conflict_avoidance:
+      level: high
+      deterministic: false
+
+    emotional_disclosure:
+      level: low
+      deterministic: false
+
+  relationships:
+    father:
+      type: parent_child
+
+      conditions:
+        attachment: high
+        resentment: high
+        dependency: low
+        desire_for_approval: high
+
+      contradiction_allowed: true
+
+  current_state:
+    emotional:
+      fear: unknown
+      anger: unknown
+      grief: unknown
+
+    physical:
+      fatigue: unknown
+      injury: false
+
+  context:
+    event: father_hospitalized
+
+    location:
+      current: unknown
+      target: hospital
+
+    available_information:
+      father_condition_may_deteriorate_rapidly: true
+
+  pressure:
+    immediacy: high
+    personal_relevance: high
+    potential_loss: high
+    perceived_control: medium
+
+  uncertainty:
+    preserve: true
+
+    unknown_fields:
+      - current_state.emotional.fear
+      - current_state.emotional.anger
+      - current_state.emotional.grief
+
+  behavioral_policy:
+    history_is_deterministic: false
+    contradiction_is_error: false
+    unknown_is_valid: true
+    multiple_plausible_behaviors_allowed: true
