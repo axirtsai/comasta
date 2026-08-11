@@ -117,7 +117,7 @@ This evidence does **not** establish:
 7. [Test protocol and definitions](tests/)
 8. [Preserved v0.1 materials](versions/v0.1/)
 
-The result index distinguishes the preserved v0.1 pilot from v0.2-draft observations and identifies tests that were not independently run.
+The result index distinguishes the preserved v0.1 pilot from v0.2 observations and identifies tests that were not independently run.
 
 ## Status boundary
 
