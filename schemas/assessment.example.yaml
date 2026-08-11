@@ -1,0 +1,153 @@
+# COMASTA Assessment Example
+# Version: 0.1-draft
+# Status: Experimental
+#
+# This file demonstrates a structured assessment
+# of a proposed character behavior.
+#
+# An assessment explains available support,
+# conflict, missing context, and uncertainty.
+#
+# It does NOT predict what the character will do.
+
+assessment:
+  id: AS001
+
+  references:
+    character_id: C001
+    proposed_action_id: A001
+
+  assessment_target:
+    behavior: confront_father
+
+  baseline:
+    established_tendency:
+      conflict_avoidance: high
+
+    consistency_with_baseline: low
+
+    note: >
+      Direct confrontation conflicts with the character's
+      established pattern of avoiding conflict with his father.
+
+  support:
+
+    historical:
+      status: present
+
+      conditions:
+        - unresolved_paternal_resentment
+        - long_term_desire_for_paternal_approval
+
+      interpretation: >
+        The character's history contains unresolved relational
+        conditions that can meaningfully connect to confrontation.
+
+    relational:
+      status: strong
+
+      conditions:
+        - attachment_high
+        - resentment_high
+        - desire_for_approval_high
+
+      interpretation: >
+        The relationship contains unresolved attachment and resentment.
+        These conditions do not cancel each other and may jointly
+        contribute to the proposed action.
+
+    contextual:
+      status: strong
+
+      conditions:
+        - father_hospitalized
+        - possible_rapid_deterioration
+        - limited_time_to_respond
+
+      interpretation: >
+        The current situation creates a substantially different
+        decision environment from previous interactions.
+
+    pressure:
+      status: strong
+
+      dimensions:
+        immediacy: high
+        personal_relevance: high
+        potential_loss: high
+        perceived_control: medium
+
+      interpretation: >
+        The possibility of irreversible loss provides meaningful
+        support for behavioral deviation.
+
+  conflicts:
+
+    - condition: long_term_conflict_avoidance
+
+      role: baseline_conflict
+
+      interpretation: >
+        The proposed behavior remains inconsistent with a recurring
+        behavioral tendency and this conflict should remain visible.
+
+  internal_tensions:
+
+    - conditions:
+        - attachment_high
+        - resentment_high
+
+      resolution_required: false
+
+      interpretation: >
+        Attachment and resentment may remain simultaneously active.
+
+  missing_context:
+
+    - current_emotional_state
+    - immediate_trigger_at_hospital
+    - father's_current_behavior_toward_character
+
+  behavioral_bridge:
+
+    status: present
+
+    path:
+      - unresolved_attachment
+      - perceived_irreversible_loss
+      - increased_immediacy
+      - existing_avoidance_pattern_becomes_unstable
+      - direct_confrontation_becomes_understandable
+
+    interpretation: >
+      Changed conditions provide an interpretable bridge between
+      the established avoidance pattern and the proposed confrontation.
+
+  result:
+
+    state: PLAUSIBLE_DEVIATION
+
+    explanation: >
+      Direct confrontation represents a meaningful departure from
+      the character's established avoidance pattern. However, unresolved
+      attachment, resentment, high relational relevance, and the possibility
+      of irreversible loss provide a coherent explanatory path for the
+      deviation.
+
+  uncertainty:
+
+    inevitability: false
+    probability_assigned: false
+    most_likely_behavior_declared: false
+    alternative_behaviors_remain_valid: true
+    unknown_preserved: true
+
+    statement: >
+      This assessment explains why confrontation can be understood.
+      It does not claim that confrontation is inevitable, most likely,
+      or the only plausible response.
+
+  creator_authority:
+
+    automatic_rewrite: false
+    final_interpretation_reserved_for_creator: true
