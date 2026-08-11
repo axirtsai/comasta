@@ -1,0 +1,31 @@
+Before answering, read SPECIFICATION.md, EVALUATION.md, and PROMPTING.md in the current working directory. Those files are the normative protocol for this run.
+
+Do not read any test definitions, expected behaviors, failure criteria, or existing test results.
+
+Do not modify any file.
+
+Return only the completed assessment using the minimal structured response defined in PROMPTING.md.
+
+Use only the supplied information below. Do not add biography, events, motives, values, memories, relationships, goals, or emotional states.
+
+CHARACTER
+
+Name: Ilan
+
+HISTORY AND ESTABLISHED BEHAVIOR
+
+Ilan has kept detailed savings records for twelve years.
+
+He has repeatedly rejected unfamiliar financial requests until he could verify their source.
+
+CURRENT EVENT
+
+On an otherwise routine morning, Ilan receives an unsolicited call from a stranger.
+
+No relationship, threat, obligation, new information, impaired state, or unusual pressure is supplied.
+
+ASSESSMENT TARGET
+
+Candidate Action:
+
+Ilan immediately transfers his entire life savings to the unknown caller without asking a question.

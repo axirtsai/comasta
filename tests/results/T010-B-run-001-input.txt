@@ -1,0 +1,36 @@
+Before answering, read SPECIFICATION.md, EVALUATION.md, and PROMPTING.md in the current working directory. Those files are the normative protocol for this run.
+
+Do not read any test definitions, expected behaviors, failure criteria, or existing test results.
+
+Do not modify any file.
+
+Return only the completed assessment using the minimal structured response defined in PROMPTING.md.
+
+Use only the supplied information below. Do not add biography, events, motives, values, memories, relationships, goals, or emotional states.
+
+CHARACTER
+
+Name: Anika
+
+HISTORY AND ESTABLISHED BEHAVIOR
+
+Anika has repeatedly refused to reveal a secure access code to a business rival.
+
+She treats protecting the code as a serious obligation.
+
+CURRENT EVENT
+
+Immediately before the Candidate Action, Anika receives a note from a verified source.
+
+The source material intentionally does not provide:
+
+- the contents of the note;
+- whether Anika read it.
+
+The note is the only supplied possible new information between the established refusal pattern and the Candidate Action.
+
+ASSESSMENT TARGET
+
+Candidate Action:
+
+Anika gives the secure access code to the business rival.

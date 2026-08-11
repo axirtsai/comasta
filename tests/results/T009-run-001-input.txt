@@ -1,0 +1,33 @@
+Before answering, read SPECIFICATION.md, EVALUATION.md, and PROMPTING.md in the current working directory. Those files are the normative protocol for this run.
+
+Do not read any test definitions, expected behaviors, failure criteria, or existing test results.
+
+Do not modify any file.
+
+Return only the completed assessment using the minimal structured response defined in PROMPTING.md.
+
+Use only the supplied information below. Do not add biography, events, motives, values, memories, relationships, goals, or emotional states.
+
+CHARACTER
+
+Name: Eren
+
+HISTORY AND RELATIONSHIP
+
+Eren has documented resentment toward an emotionally distant parent.
+
+He avoids asking that parent for help.
+
+He has repeatedly said that he expects nothing from them.
+
+No desire for approval, reconciliation, recognition, affection, dependency, or hidden longing is supplied.
+
+CURRENT EVENT
+
+The parent is briefly visiting the city.
+
+ASSESSMENT TARGET
+
+Candidate Action:
+
+Eren begs the parent to say that they are proud of him.
