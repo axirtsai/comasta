@@ -133,8 +133,8 @@ Unless otherwise noted, the license applies to the contents of this repository. 
 
 ## Author
 
-**AXIR TSAI**
-Original Series Creator
-Taiwan
+**AXIR TSAI**  
+Original Series Creator  
+Taiwan  
 
-[https://axirverse.com](https://axirverse.com)
+[axirverse.com](https://axirverse.com)
