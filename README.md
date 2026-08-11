@@ -185,3 +185,25 @@ Original Series Creator
 Taiwan  
 
 [https://axirverse.com](https://axirverse.com)
+
+---
+
+## License / 授權
+
+COMASTA is licensed under the [Apache License 2.0](LICENSE).
+
+Unless otherwise noted, this license applies to the contents of this repository.
+
+The license permits use, modification, distribution, and commercial implementation subject to the terms of the Apache License 2.0.
+
+COMASTA project materials do not include or license AXIR TSAI's unpublished screenplays, narrative works, private project materials, or other creative works that are not contained in this repository.
+
+---
+
+COMASTA 採用 [Apache License 2.0](LICENSE) 授權。
+
+除非另有標示，本授權適用於此儲存庫中的內容。
+
+Apache License 2.0 允許使用、修改、散布及商業實作，但使用者仍須遵守該授權條款。
+
+本儲存庫的授權範圍不包含 AXIR TSAI 未公開的劇本、敘事作品、私人專案資料，以及任何未包含於此儲存庫中的其他創作內容。
