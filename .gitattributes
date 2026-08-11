@@ -1,2 +1,7 @@
-# Auto detect text files and perform LF normalization
+# Normal source/document files
 * text=auto
+
+# Frozen validation artifacts must preserve exact bytes.
+tests/fixtures/** -text
+tests/results/*-input.txt -text
+tests/results/*-raw.md -text
