@@ -1,7 +1,8 @@
 # T003 - Plausible Deviation
 
 **Version:** 0.2-draft
-**Status:** Controlled Test Definition - Post-Run-001 Harness Clarification
+**Status:** Observed — Controlled Run 001 FAIL; Controlled Run 002 core pattern observed with strict provenance FAIL
+**Result reference:** [`T003-controlled-AB-run-001-evaluation.md`](results/T003-controlled-AB-run-001-evaluation.md) and [`T003-controlled-AB-run-002-evaluation.md`](results/T003-controlled-AB-run-002-evaluation.md)
 
 The historical v0.1 definition is preserved under `versions/v0.1/tests/`. T003-R001 remains unchanged under `tests/results/`.
 

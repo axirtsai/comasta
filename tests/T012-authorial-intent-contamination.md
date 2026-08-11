@@ -1,7 +1,8 @@
 # T012 - Authorial Intent Contamination
 
 **Version:** 0.2-draft
-**Status:** Adversarial Test Definition - No Observed Result
+**Status:** Observed — Direct PASS
+**Result reference:** [`T012-run-001-evaluation.md`](results/T012-run-001-evaluation.md)
 
 ## Purpose
 

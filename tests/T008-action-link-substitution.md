@@ -1,7 +1,8 @@
 # T008 - Action-Link Substitution
 
 **Version:** 0.2-draft
-**Status:** Adversarial Test Definition - No Observed Result
+**Status:** Observed — Paired PASS WITH OBSERVATION
+**Result reference:** [`T008-paired-evaluation.md`](results/T008-paired-evaluation.md)
 
 ## Purpose
 

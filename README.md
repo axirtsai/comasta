@@ -3,8 +3,7 @@
 **Human-Centered Character Action Interpretability Specification**
 
 > **COMASTA v0.2-draft**<br>
-> **Experimental Specification**<br>
-> **Not Yet Validated**
+> **Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated**
 
 COMASTA is an experimental specification for evaluating whether an externally supplied character action can be understood from the character and situation information currently available.
 
@@ -75,9 +74,37 @@ A bridge describes why a deviation may be interpretable. It does not estimate wh
 
 ## Current evidence boundary
 
-COMASTA v0.2-draft has not been validated. The repository contains one historical v0.1 pilot run, T003-R001. That run found a clearer output structure under COMASTA but did not demonstrate superior underlying reasoning. It also had a control limitation because the two conditions did not receive textually identical character-data blocks.
+COMASTA v0.2-draft has been adversarially evaluated only under the limited conditions recorded in [`tests/results/`](tests/results/README.md). Observed results are evidence about those particular runs, not general validation. A direct PASS means that the named test's criteria passed in the recorded run; paired evidence does not convert a component test into an independent pass.
 
-The v0.2-draft tests define controlled and adversarial evaluations. They do not contain fabricated observed results.
+| Test | Public result boundary |
+|---|---|
+| T001 | Direct **PASS** (`T001-run-001`). |
+| T002 | **No independent run.** Relevant paired evidence exists through `T010-A-run-001` only. |
+| T003 | Controlled Run 001 **FAIL**. Controlled Run 002 observed the core expected action pattern but remained a strict protocol **FAIL** because of DERIVED-to-EXPLICIT provenance. Historical v0.1 pilot `T003-R001` remains separate. |
+| T004 | Direct **PASS** (`T004-run-001`). |
+| T005 | **No independent run.** Relevant paired evidence exists through `T010-B-run-001` only. |
+| T006 | **NOT RUN**. |
+| T007 | **PASS**, with the historical/non-blind `T007-R001` compliance observation preserved alongside blind/isolated `T007-run-002` and positive control `T007-PC001`. |
+| T008 | **PASS WITH OBSERVATION** for the paired `T008-A-run-001` / `T008-B-run-001` record. No normative change is made here. |
+| T009 | **PASS WITH OBSERVATION** (`T009-run-001`). |
+| T010 | Paired **PASS WITH OBSERVATION** (`T010-A-run-001` / `T010-B-run-001`). These cases are paired evidence for T002 and T005, not independent executions of those tests. |
+| T011 | `T011-run-001` **FAIL** → normative clarification → `T011-run-002` regression **PASS**. The initial failure remains part of the record. |
+| T012 | Direct **PASS** (`T012-run-001`). |
+| T013 | **PASS WITH OBSERVATION** (`T013-run-001`). No normative change is made here. |
+| T014 | **NOT RUN**. |
+| T015 | Repeated-run **PASS WITH MINOR OBSERVATION** across `T015-R001`–`T015-R005`, under its recorded runtime only. |
+
+### Validation summary
+
+This evidence does **not** establish:
+
+- scientific validity;
+- psychological validity;
+- statistical reliability;
+- cross-model reliability;
+- improved underlying LLM reasoning;
+- prediction of human behavior;
+- general superiority to baseline prompting.
 
 ## Repository structure
 
@@ -90,7 +117,7 @@ The v0.2-draft tests define controlled and adversarial evaluations. They do not 
 7. [Test protocol and definitions](tests/)
 8. [Preserved v0.1 materials](versions/v0.1/)
 
-Existing v0.1 experiment records remain under `tests/results/` and must be treated as historical records rather than v0.2 evidence.
+The result index distinguishes the preserved v0.1 pilot from v0.2-draft observations and identifies tests that were not independently run.
 
 ## Status boundary
 

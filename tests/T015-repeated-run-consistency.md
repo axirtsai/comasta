@@ -1,7 +1,8 @@
 # T015 - Repeated-Run Consistency
 
 **Version:** 0.2-draft
-**Status:** Adversarial Test Protocol - No Observed Result
+**Status:** Observed — Repeated-run PASS WITH MINOR OBSERVATION under the recorded runtime only
+**Result reference:** [`T015-series-environment.md`](results/T015-series-environment.md) and [`T015-series-001-evaluation.md`](results/T015-series-001-evaluation.md)
 
 ## Purpose
 

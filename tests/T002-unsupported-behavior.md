@@ -1,7 +1,8 @@
 # T002 - Unsupported Behavior
 
 **Version:** 0.2-draft
-**Status:** Test Definition Only - No Observed Result
+**Status:** No independent run — relevant paired evidence through T010-A only
+**Result reference:** [`T010-A-run-001-evaluation.md`](results/T010-A-run-001-evaluation.md) and [`T010-paired-evaluation.md`](results/T010-paired-evaluation.md)
 
 ## Purpose
 

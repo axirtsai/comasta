@@ -1,7 +1,7 @@
 # COMASTA Evaluation Model
 
 **Version:** 0.2-draft
-**Status:** Experimental Specification - Not Yet Validated
+**Status:** Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
 
 COMASTA uses categorical, non-additive evaluation. It does not calculate psychological scores, behavioral probabilities, or a most-likely action.
 

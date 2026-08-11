@@ -1,141 +1,27 @@
-# Test result status
+# COMASTA v0.2-draft authoritative result index
 
-The existing files in this directory are preserved v0.1 historical pilot records. They have not been rewritten as v0.2 results.
+**Status:** Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
 
-- `T003-run-001.md` records the v0.1 T003-R001 pilot and its acknowledged control limitation.
-- `Condition A - Baseline Output` and `Condition B - COMASTA Output` preserve the corresponding raw outputs.
+This index reports the preserved record without rewriting frozen inputs, raw outputs, historical evidence, or evaluation files. “Observed” means that an output was preserved and evaluated. Related evidence from a paired test does not count as an independent run of another test.
 
-The following observed v0.2-draft result is recorded:
+| Test | Observed? | Exact run identifiers | Result | Evidence type | Important observation or limitation | Runtime metadata availability |
+|---|---|---|---|---|---|---|
+| T001 | Observed | `T001-run-001` | **PASS** | Direct blind/isolated run; [evaluation](T001-run-001-evaluation.md) | One controlled observation; no repeated-run or cross-model inference. | Blind/isolated mode recorded; full model/runtime configuration not recorded in the preserved run artifacts. |
+| T002 | Not independently observed | `T010-A-run-001` is relevant paired evidence only | **NO INDEPENDENT RUN** | Component case within the T010 paired evaluation; [case evaluation](T010-A-run-001-evaluation.md), [paired evaluation](T010-paired-evaluation.md) | T010-A observed `SUFFICIENT FOR TARGET` / `ISSUED` / `UNSUPPORTED`; this does not convert T002 into an independent PASS. | No T002 runtime. T010-A records blind/isolated mode; full configuration is not recorded. |
+| T003 | Observed | Historical `T003-R001`; controlled `T003-A-run-001` + `T003-B-run-001`; controlled `T003-A-run-002` + `T003-B-run-002` | Controlled Run 001 **FAIL**; Controlled Run 002 core pattern **OBSERVED** but strict provenance **FAIL** | Historical v0.1 pilot plus two controlled A/B v0.2-draft observations; [historical pilot](T003-run-001.md), [Run 001 evaluation](T003-controlled-AB-run-001-evaluation.md), [Run 002 evaluation](T003-controlled-AB-run-002-evaluation.md) | Run 001 misapplied Action-Link substitution, used non-normative statuses/incomplete triads, and treated targets as evidence. Run 002 corrected the core pattern but a DERIVED claim depended on DERIVED rather than direct EXPLICIT identifiers. T003 is not a PASS. | `T003-R001` records provider, model, reasoning, interface, temporary-chat, personalization, tools, language, and sampling availability. Controlled v0.2 evaluations record A/B mode and fixture integrity but not full runtime configuration. |
+| T004 | Observed | `T004-run-001` | **PASS** | Direct blind/isolated run; [evaluation](T004-run-001-evaluation.md) | Contradictory relationship conditions remained visible without an unnecessary deviation. One controlled observation only. | Blind/isolated mode recorded; full model/runtime configuration not recorded. |
+| T005 | Not independently observed | `T010-B-run-001` is relevant paired evidence only | **NO INDEPENDENT RUN** | Component case within the T010 paired evaluation; [case evaluation](T010-B-run-001-evaluation.md), [paired evaluation](T010-paired-evaluation.md) | T010-B observed `CRITICAL CONTEXT MISSING` / `WITHHELD`; this does not convert T005 into an independent PASS. Optional Author Questions were absent, and substitution wording was noted. | No T005 runtime. T010-B records blind/isolated mode; full configuration is not recorded. |
+| T006 | Not observed | None | **NOT RUN** | Test definition only | No output or evaluation is recorded. | Not applicable. |
+| T007 | Observed | `T007-R001`; `T007-run-002`; `T007-PC001` | **PASS** | Non-blind same-task compliance observation, blind/isolated controlled run, and blind/isolated positive control; [R001 evaluation](T007-run-001-evaluation.md), [Run 002 evaluation](T007-run-002-evaluation.md), [positive-control evaluation](T007-PC001-evaluation.md) | `T007-R001` passed response criteria but is not controlled validation evidence because blinding/session isolation failed. Run 002 rejected the arbitrary action; PC001 accepted the grounded deviation, with context held constant except for the Candidate Action. | R001 records provider/interface/configured model and reasoning plus unavailable deployment/sampling fields. Run 002 records CLI `0.147.0`, `gpt-5.6-terra`, low reasoning, read-only sandbox, disabled web, ephemeral session, and dedicated `CODEX_HOME`. PC001 records blind/isolated mode but no separate full configuration. |
+| T008 | Observed | `T008-A-run-001`; `T008-B-run-001` | **PASS WITH OBSERVATION** | Blind/isolated paired observation; [paired evaluation](T008-paired-evaluation.md) | The generic Action Link failed across both actions. Minor observation: proposed Action Link evaluation is structurally ambiguous when no Baseline Conflict exists. No normative change is made in this pass. | Blind/isolated paired mode recorded; full model/runtime configuration not recorded. |
+| T009 | Observed | `T009-run-001` | **PASS WITH OBSERVATION** | Direct blind/isolated adversarial run; [evaluation](T009-run-001-evaluation.md) | No provenance laundering was observed; a relevant Open Unknown was not surfaced. | Blind/isolated mode recorded; full model/runtime configuration not recorded. |
+| T010 | Observed | `T010-A-run-001`; `T010-B-run-001` | Paired **PASS WITH OBSERVATION** | Blind/isolated paired observation; [Case A](T010-A-run-001-evaluation.md), [Case B](T010-B-run-001-evaluation.md), [paired evaluation](T010-paired-evaluation.md) | The pair distinguished assessable lack of support from a specific missing fact. Case B had optional Author Questions absent and imprecise substitution-test wording. The cases are only paired evidence for T002/T005. | Blind/isolated mode recorded for both cases and the pair; full model/runtime configuration not recorded. |
+| T011 | Observed | `T011-run-001`; `T011-run-002` | Initial **FAIL** → normative clarification → regression **PASS** | Two blind/isolated runs around a recorded normative clarification; [Run 001 evaluation](T011-run-001-evaluation.md), [Run 002 evaluation](T011-run-002-evaluation.md) | Run 001 allowed authorial scope into DERIVED evidence and used the Candidate Action as a dependency. Run 002 did not reproduce either failure. Run 001 remains part of the result. | Blind/isolated modes recorded; full model/runtime configurations not recorded. |
+| T012 | Observed | `T012-run-001` | **PASS** | Direct blind/isolated adversarial run; [evaluation](T012-run-001-evaluation.md) | Authorial preference did not contaminate behavioral evidence; one controlled observation only. | Blind/isolated mode recorded; full model/runtime configuration not recorded. |
+| T013 | Observed | `T013-run-001` | **PASS WITH OBSERVATION** | Direct blind/isolated adversarial run; [evaluation](T013-run-001-evaluation.md) | Action was `PLAUSIBLE DEVIATION` and Expression was `UNSUPPORTED`; a minor schema-label issue was recorded. No normative change is made in this pass. | Blind/isolated mode recorded; full model/runtime configuration not recorded. |
+| T014 | Not observed | None | **NOT RUN** | Test definition only | No output or evaluation is recorded. | Not applicable. |
+| T015 | Observed | `T015-R001`; `T015-R002`; `T015-R003`; `T015-R004`; `T015-R005` (Formal Preregistered Series 001) | **PASS WITH MINOR OBSERVATION** (recorded as **PASS WITH MINOR STRUCTURAL OBSERVATION**) | Five-run preregistered repeated-run series; [environment record](T015-series-environment.md), [series evaluation](T015-series-001-evaluation.md) | Core classification, bridge, provenance, and known-unknown structure were stable; R005 omitted the separate Action-level UNGROUNDED-claims section. The result applies only to the recorded runtime and frozen input. | Preregistered record includes Codex CLI `0.147.0`, `gpt-5.6-sol`, high reasoning, non-interactive interface, dedicated `CODEX_HOME`, ignored user config/rules, read-only sandbox, disabled web, and ephemeral runs. |
 
-- `T007-run-001-input.txt` preserves the fixed T007-R001 input.
-- `T007-run-001-raw.md` preserves run metadata, the exact input, and the unedited observed output.
-- `T007-run-001-evaluation.md` evaluates the observed output against the predefined T007 criteria.
+## Validation boundary
 
-### T007-run-001 classification
-
-**Status:** NON-BLIND PILOT / COMPLIANCE OBSERVATION
-
-**Validation Evidence:** NOT COUNTED AS CONTROLLED VALIDATION EVIDENCE
-
-**Reason:**
-
-The isolated CLI invocation did not enter model inference.
-
-The only completed observed output was produced inside the same Codex task that already had access to the T007 purpose, expected failure modes, and prior discussion.
-
-Therefore the run may be retained as a compliance observation, but it must not be treated as blind or controlled validation evidence for COMASTA v0.2.
-
-| Run | Status | Validation Use |
-|---|---|---|
-| T007-run-001 | NON-BLIND PILOT / COMPLIANCE OBSERVATION | Not counted as controlled validation evidence |
-
----
-
-### T007-run-002 classification
-
-**Status:** BLIND / ISOLATED OBSERVED RUN
-
-**Result:** PASS
-
-**Validation Evidence:** COUNTED AS CONTROLLED VALIDATION EVIDENCE
-
-**Candidate Action:**
-
-> Wei-Cheng steals an unattended ambulance and deliberately drives it into the sea.
-
-**Observed Assessment:**
-
-- `epistemic_status: SUFFICIENT FOR TARGET`
-- `assessment_disposition: ISSUED`
-- `assessment_state: UNSUPPORTED`
-
-**Reason:**
-
-The run was executed in an isolated Codex CLI environment using a dedicated `CODEX_HOME`.
-
-The model had access only to the frozen v0.2-draft normative documents and the fixed assessment input.
-
-It did not have access to:
-
-- the T007 test definition;
-- expected behavior;
-- failure criteria;
-- previous T007 results;
-- prior discussion of the test.
-
-The model did not construct a Behavioral Bridge from unrelated high-pressure context and did not promote UNGROUNDED action-specific assumptions into evidence.
-
-| Run          | Status                    | Result | Validation Use                           |
-| ------------ | ------------------------- | ------ | ---------------------------------------- |
-| T007-run-002 | BLIND / ISOLATED OBSERVED | PASS   | Counted as controlled validation evidence |
-
----
-
-### T007-PC001 classification
-
-**Status:** BLIND / ISOLATED POSITIVE CONTROL
-
-**Result:** PASS
-
-**Validation Evidence:** COUNTED AS CONTROLLED VALIDATION EVIDENCE
-
-**Candidate Action:**
-
-> Wei-Cheng directly confronts his father about their unresolved relationship.
-
-**Observed Assessment:**
-
-- `behavioral_bridge.status: BRIDGE ESTABLISHED`
-- `epistemic_status: SUFFICIENT FOR TARGET`
-- `assessment_disposition: ISSUED`
-- `assessment_state: PLAUSIBLE DEVIATION`
-
-**Reason:**
-
-This run used the same character history, relationship information, current event, pressures, and known unknowns as T007-run-002.
-
-Only the Candidate Action was changed.
-
-The model identified:
-
-- a grounded Baseline Conflict;
-- grounded Difference-Making Conditions;
-- bounded DERIVED claims with EXPLICIT dependencies;
-- an action-specific Behavioral Bridge;
-- no necessary UNGROUNDED bridge link.
-
-This positive control checks that COMASTA does not merely reject actions that deviate from established behavioral patterns.
-
-| Run        | Status                            | Result | Validation Use                           |
-| ---------- | --------------------------------- | ------ | ---------------------------------------- |
-| T007-PC001 | BLIND / ISOLATED POSITIVE CONTROL | PASS   | Counted as controlled validation evidence |
-
----
-
-## T007 controlled paired observation
-
-The current controlled pair is:
-
-| Run          | Candidate Action Type                                | Observed Result        |
-| ------------ | ---------------------------------------------------- | ---------------------- |
-| T007-run-002 | Arbitrary action without action-specific grounding    | `UNSUPPORTED`          |
-| T007-PC001   | Grounded behavioral deviation                        | `PLAUSIBLE DEVIATION`  |
-
-The supplied character and situational context were held constant between the two controlled runs.
-
-Only the Candidate Action was changed.
-
-This paired observation is consistent with COMASTA v0.2-draft distinguishing between:
-
-1. an action lacking grounded action-specific support; and
-2. an action that conflicts with an established behavioral baseline but is connected to the current situation through a grounded Behavioral Bridge.
-
-This result does **not** establish that COMASTA v0.2 is validated.
-
-It does not demonstrate:
-
-- general prevention of post-hoc rationalization;
-- improvement in underlying LLM reasoning;
-- repeated-run consistency;
-- cross-model reliability;
-- or general behavioral validity.
+The evidence indexed here does **not** establish scientific validity, psychological validity, statistical reliability, cross-model reliability, improved underlying LLM reasoning, prediction of human behavior, or general superiority to baseline prompting.

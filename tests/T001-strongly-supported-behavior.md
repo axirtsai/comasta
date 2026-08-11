@@ -1,7 +1,8 @@
 # T001 - Strongly Supported Behavior
 
 **Version:** 0.2-draft
-**Status:** Test Definition Only - No Observed Result
+**Status:** Observed — Direct PASS
+**Result reference:** [`T001-run-001-evaluation.md`](results/T001-run-001-evaluation.md)
 
 ## Purpose
 

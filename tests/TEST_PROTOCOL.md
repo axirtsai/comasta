@@ -1,7 +1,7 @@
 # COMASTA Test Protocol
 
 **Version:** 0.2-draft
-**Status:** Experimental Test Protocol - Not Yet Validated
+**Status:** Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
 
 This protocol evaluates whether COMASTA produces traceable, bounded character-action interpretation without prediction, fabricated context, provenance laundering, or arbitrary Behavioral Bridges.
 

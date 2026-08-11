@@ -1,7 +1,7 @@
 # COMASTA Character Action Interpretability Specification
 
 **Version:** 0.2-draft
-**Status:** Experimental Specification - Not Yet Validated
+**Status:** Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
 
 COMASTA evaluates whether an externally supplied Candidate Action can currently be understood from grounded character and situational information.
 

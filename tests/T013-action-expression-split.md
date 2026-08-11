@@ -1,7 +1,8 @@
 # T013 - Action-Expression Split
 
 **Version:** 0.2-draft
-**Status:** Adversarial Test Definition - No Observed Result
+**Status:** Observed — PASS WITH OBSERVATION
+**Result reference:** [`T013-run-001-evaluation.md`](results/T013-run-001-evaluation.md)
 
 ## Purpose
 

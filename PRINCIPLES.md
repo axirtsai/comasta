@@ -1,7 +1,7 @@
 # COMASTA Principles
 
 **Version:** 0.2-draft
-**Status:** Experimental Specification - Not Yet Validated
+**Status:** Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
 
 These principles define the philosophical boundary of COMASTA. The specification evaluates the interpretability of an externally supplied Candidate Action. It does not determine what a character must, will, or is most likely to do.
 

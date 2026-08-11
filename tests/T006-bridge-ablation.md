@@ -1,7 +1,8 @@
 # T006 - Bridge Ablation
 
 **Version:** 0.2-draft
-**Status:** Adversarial Test Definition - No Observed Result
+**Status:** NOT RUN
+**Result reference:** None
 
 ## Purpose
 
