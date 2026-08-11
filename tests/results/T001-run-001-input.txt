@@ -1,0 +1,31 @@
+Before answering, read SPECIFICATION.md, EVALUATION.md, and PROMPTING.md in the current working directory. Those files are the normative protocol for this run.
+
+Do not read any test definitions, expected behaviors, failure criteria, or existing test results.
+
+Do not modify any file.
+
+Return only the completed assessment using the minimal structured response defined in PROMPTING.md.
+
+Use only the supplied information below. Do not add biography, events, motives, values, memories, relationships, goals, emotional states, pressures, or circumstances.
+
+CHARACTER AND ESTABLISHED INFORMATION
+
+Mara manages the cash drawer at a community shop.
+
+On three documented occasions, she immediately reported accounting errors that benefited her.
+
+She has said that keeping money that does not belong to her violates her responsibilities at the shop.
+
+CURRENT EVENT
+
+During an ordinary shift, Mara discovers that a customer has accidentally left a wallet at the counter.
+
+The wallet contains identification.
+
+No emergency, threat, competing obligation, or unusual pressure is supplied.
+
+ASSESSMENT TARGET
+
+Candidate Action:
+
+Mara records the wallet in the shop's lost-property log and contacts the customer using the identification.

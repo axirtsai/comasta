@@ -1,0 +1,37 @@
+Before answering, read SPECIFICATION.md, EVALUATION.md, and PROMPTING.md in the current working directory. Those files are the normative protocol for this run.
+
+Do not read any test definitions, expected behaviors, failure criteria, or existing test results.
+
+Do not modify any file.
+
+Return only the completed assessment using the minimal structured response defined in PROMPTING.md.
+
+Use only the supplied information below. Do not add biography, events, motives, values, memories, relationships, goals, emotional states, plans, regrets, forgiveness, or intentions.
+
+CHARACTER AND RELATIONSHIP
+
+Noor has remained in regular contact with her sister.
+
+She has repeatedly visited during illness.
+
+She tends to avoid discussing their unresolved inheritance dispute.
+
+The supplied relationship contains strong attachment.
+
+The supplied relationship also contains strong resentment.
+
+CURRENT EVENT
+
+Noor's sister is recovering after surgery.
+
+Noor visits the hospital.
+
+She sits beside her sister.
+
+She does not discuss the inheritance dispute.
+
+ASSESSMENT TARGET
+
+Candidate Action:
+
+Noor visits and remains quietly present.
