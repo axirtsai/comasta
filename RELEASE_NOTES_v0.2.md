@@ -1,6 +1,6 @@
 # COMASTA v0.2
 
-**Status:** Experimental — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated.
+**Status:** Experimental v0.2 — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated.
 
 ## What v0.2 is
 
