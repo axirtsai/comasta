@@ -86,6 +86,17 @@ The specification is expected to change as its assumptions, failure cases, and p
 
 > **Human contradiction is not a system error.**
 
+## Specification Structure
+
+For a first reading of COMASTA, the recommended order is:
+
+1. [Principles](PRINCIPLES.md) — foundational assumptions
+2. [Specification](SPECIFICATION.md) — character plausibility specification
+3. [Evaluation](EVALUATION.md) — assessment logic
+4. [Prompting](PROMPTING.md) — LLM adaptation protocol
+5. [Examples](examples/) — example character cases
+6. [Tests](tests/) — experimental evaluation and results
+
 ---
 
 # 繁體中文
@@ -175,6 +186,17 @@ COMASTA 目前處於初期規格開發階段。
 隨著假設、失敗案例與實際創作用途持續接受測試，這套規格預期仍會修改與演進。
 
 > **人的矛盾不是系統錯誤。**
+
+## 規格閱讀順序
+
+第一次閱讀 COMASTA，建議依照以下順序：
+
+1. [Principles](PRINCIPLES.md) — 基礎原則
+2. [Specification](SPECIFICATION.md) — 人物行為成立性規格
+3. [Evaluation](EVALUATION.md) — 評估邏輯
+4. [Prompting](PROMPTING.md) — LLM 適配協議
+5. [Examples](examples/) — 範例案例
+6. [Tests](tests/) — 實驗測試與結果
 
 ---
 
