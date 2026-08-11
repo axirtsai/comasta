@@ -1,7 +1,7 @@
 # COMASTA Principles
 
-**Version:** 0.2-draft
-**Status:** Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
+**Version:** 0.2
+**Status:** Experimental v0.2 — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
 
 These principles define the philosophical boundary of COMASTA. The specification evaluates the interpretability of an externally supplied Candidate Action. It does not determine what a character must, will, or is most likely to do.
 
@@ -51,7 +51,7 @@ The same history and situation may provide different grounded explanatory paths 
 
 An action may be interpretable while its exact dialogue, delivery, timing, or physical expression is not currently supported. When relevant, Action Interpretability and Expression Interpretability are assessed separately using the same grounding rules.
 
-COMASTA v0.2-draft does not define a broad expression taxonomy or a separate divergence state.
+COMASTA v0.2 does not define a broad expression taxonomy or a separate divergence state.
 
 ## P10 - Authorial Authority Is Reserved
 

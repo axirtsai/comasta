@@ -1,6 +1,6 @@
 # T003 - Plausible Deviation
 
-**Version:** 0.2-draft
+**Version:** 0.2
 **Status:** Observed — Controlled Run 001 FAIL; Controlled Run 002 core pattern observed with strict provenance FAIL
 **Result reference:** [`T003-controlled-AB-run-001-evaluation.md`](results/T003-controlled-AB-run-001-evaluation.md) and [`T003-controlled-AB-run-002-evaluation.md`](results/T003-controlled-AB-run-002-evaluation.md)
 

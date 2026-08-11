@@ -1,6 +1,6 @@
 # T010 - Unsupported vs Critical Missing
 
-**Version:** 0.2-draft
+**Version:** 0.2
 **Status:** Observed — Paired PASS WITH OBSERVATION
 **Result reference:** [`T010-A-run-001-evaluation.md`](results/T010-A-run-001-evaluation.md), [`T010-B-run-001-evaluation.md`](results/T010-B-run-001-evaluation.md), and [`T010-paired-evaluation.md`](results/T010-paired-evaluation.md)
 

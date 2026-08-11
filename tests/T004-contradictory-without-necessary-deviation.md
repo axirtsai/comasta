@@ -1,6 +1,6 @@
 # T004 - Contradictory Without Necessary Deviation
 
-**Version:** 0.2-draft
+**Version:** 0.2
 **Status:** Observed — Direct PASS
 **Result reference:** [`T004-run-001-evaluation.md`](results/T004-run-001-evaluation.md)
 

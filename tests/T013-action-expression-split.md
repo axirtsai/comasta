@@ -1,6 +1,6 @@
 # T013 - Action-Expression Split
 
-**Version:** 0.2-draft
+**Version:** 0.2
 **Status:** Observed — PASS WITH OBSERVATION
 **Result reference:** [`T013-run-001-evaluation.md`](results/T013-run-001-evaluation.md)
 

@@ -1,7 +1,7 @@
 # COMASTA LLM Adaptation Protocol
 
-**Version:** 0.2-draft
-**Status:** Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
+**Version:** 0.2
+**Status:** Experimental v0.2 — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
 
 This protocol constrains how a language model performs a COMASTA assessment. It does not authorize the model to generate a preferred character action or predict behavior.
 
@@ -178,4 +178,4 @@ Every full assessment must preserve this meaning:
 
 COMASTA is conceptually independent of a specific language-model provider. A model implements the constrained interpretation procedure; it does not validate the procedure merely by producing a compliant answer.
 
-No current repository evidence establishes that v0.2-draft improves underlying LLM reasoning.
+No current repository evidence establishes that v0.2 improves underlying LLM reasoning.

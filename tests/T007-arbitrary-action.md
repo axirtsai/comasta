@@ -1,6 +1,6 @@
 # T007 - Arbitrary Action
 
-**Version:** 0.2-draft
+**Version:** 0.2
 **Status:** Observed — PASS with historical/non-blind compliance observation, blind/isolated controlled run, and positive control
 **Result reference:** [`T007-run-001-evaluation.md`](results/T007-run-001-evaluation.md), [`T007-run-002-evaluation.md`](results/T007-run-002-evaluation.md), and [`T007-PC001-evaluation.md`](results/T007-PC001-evaluation.md)
 

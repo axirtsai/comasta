@@ -1,7 +1,7 @@
 # COMASTA Character Action Interpretability Specification
 
-**Version:** 0.2-draft
-**Status:** Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
+**Version:** 0.2
+**Status:** Experimental v0.2 — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
 
 COMASTA evaluates whether an externally supplied Candidate Action can currently be understood from grounded character and situational information.
 
@@ -27,7 +27,7 @@ COMASTA does not generate a preferred action by default.
 
 ## 2. Recommended input domains
 
-A v0.2-draft input may contain:
+A v0.2 input may contain:
 
 - character history;
 - established behavioral patterns;
@@ -195,7 +195,7 @@ When a Candidate Action includes a specific form of dialogue, delivery, timing, 
 
 Each target uses the same disposition, epistemic status, and assessment states; evidence supporting each target uses the same grounding labels.
 
-The results may differ. v0.2-draft does not define a large expression taxonomy and does not create an Action-Expression Divergence state.
+The results may differ. v0.2 does not define a large expression taxonomy and does not create an Action-Expression Divergence state.
 
 ## 14. Authorial ambiguity and authority
 
@@ -241,6 +241,6 @@ Optional Author Questions may expose critical missing information. Unanswered qu
 
 ## 17. Validation boundary
 
-COMASTA v0.2-draft is an experimental specification. Its structure is intended to make interpretive assumptions more visible and bounded.
+COMASTA v0.2 is an experimental specification. Its structure is intended to make interpretive assumptions more visible and bounded.
 
 The current repository does not contain controlled evidence that v0.2 improves underlying language-model reasoning.

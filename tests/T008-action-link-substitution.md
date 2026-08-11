@@ -1,6 +1,6 @@
 # T008 - Action-Link Substitution
 
-**Version:** 0.2-draft
+**Version:** 0.2
 **Status:** Observed — Paired PASS WITH OBSERVATION
 **Result reference:** [`T008-paired-evaluation.md`](results/T008-paired-evaluation.md)
 

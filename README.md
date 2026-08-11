@@ -2,8 +2,8 @@
 
 **Human-Centered Character Action Interpretability Specification**
 
-> **COMASTA v0.2-draft**<br>
-> **Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated**
+> **COMASTA v0.2**<br>
+> **Experimental v0.2 — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated**
 
 COMASTA is an experimental specification for evaluating whether an externally supplied character action can be understood from the character and situation information currently available.
 
@@ -13,7 +13,7 @@ Its central principle is:
 
 COMASTA evaluates interpretive support. It does not predict what a character will do, assign behavioral probabilities, model a personality, diagnose psychology, generate characters, or replace authorial judgment.
 
-## What v0.2-draft evaluates
+## What v0.2 evaluates
 
 An assessment begins with a `Candidate Action`. When necessary, the action and its specific form of expression may be evaluated as separate targets.
 
@@ -74,7 +74,7 @@ A bridge describes why a deviation may be interpretable. It does not estimate wh
 
 ## Current evidence boundary
 
-COMASTA v0.2-draft has been adversarially evaluated only under the limited conditions recorded in [`tests/results/`](tests/results/README.md). Observed results are evidence about those particular runs, not general validation. A direct PASS means that the named test's criteria passed in the recorded run; paired evidence does not convert a component test into an independent pass.
+COMASTA v0.2 has been adversarially evaluated only under the limited conditions recorded in [`tests/results/`](tests/results/README.md). Observed results are evidence about those particular runs, not general validation. A direct PASS means that the named test's criteria passed in the recorded run; paired evidence does not convert a component test into an independent pass.
 
 | Test | Public result boundary |
 |---|---|

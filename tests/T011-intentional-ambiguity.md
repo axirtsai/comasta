@@ -1,6 +1,6 @@
 # T011 - Intentional Ambiguity
 
-**Version:** 0.2-draft
+**Version:** 0.2
 **Status:** Observed — Initial FAIL → normative clarification → regression PASS
 **Result reference:** [`T011-run-001-evaluation.md`](results/T011-run-001-evaluation.md) and [`T011-run-002-evaluation.md`](results/T011-run-002-evaluation.md)
 

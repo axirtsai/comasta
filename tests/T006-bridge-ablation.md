@@ -1,6 +1,6 @@
 # T006 - Bridge Ablation
 
-**Version:** 0.2-draft
+**Version:** 0.2
 **Status:** NOT RUN
 **Result reference:** None
 

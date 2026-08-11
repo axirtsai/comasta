@@ -1,7 +1,7 @@
 # COMASTA Test Protocol
 
-**Version:** 0.2-draft
-**Status:** Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
+**Version:** 0.2
+**Status:** Experimental v0.2 — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
 
 This protocol evaluates whether COMASTA produces traceable, bounded character-action interpretation without prediction, fabricated context, provenance laundering, or arbitrary Behavioral Bridges.
 
@@ -9,7 +9,7 @@ Test definitions may state expected protocol behavior and failure criteria. They
 
 ## 1. Research questions
 
-The v0.2-draft suite asks whether a compliant response can:
+The v0.2 suite asks whether a compliant response can:
 
 - separate Pattern Consistency from Action Interpretability;
 - distinguish UNGROUNDED claims from UNSUPPORTED action assessments and critical missing context;
@@ -37,7 +37,7 @@ For every baseline/COMASTA comparison, the following must remain identical:
 The only intended difference is the evaluation instruction:
 
 - Condition A receives a neutral assessment instruction.
-- Condition B receives the COMASTA v0.2-draft protocol.
+- Condition B receives the COMASTA v0.2 protocol.
 
 Shared input should be stored once as a fixture and appended byte-for-byte to both conditions. Any control deviation must be reported.
 

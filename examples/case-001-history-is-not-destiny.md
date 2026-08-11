@@ -1,6 +1,6 @@
 # Case 001 - History Is Not Destiny
 
-**Version:** 0.2-draft
+**Version:** 0.2
 **Status:** Illustrative Example - Not an Observed Test Result
 
 ## Purpose

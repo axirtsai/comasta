@@ -1,6 +1,6 @@
-# COMASTA v0.2-draft authoritative result index
+# COMASTA v0.2 authoritative result index
 
-**Status:** Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
+**Status:** Experimental v0.2 — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
 
 This index reports the preserved record without rewriting frozen inputs, raw outputs, historical evidence, or evaluation files. “Observed” means that an output was preserved and evaluated. Related evidence from a paired test does not count as an independent run of another test.
 

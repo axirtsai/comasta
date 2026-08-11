@@ -1,6 +1,6 @@
 # T001 - Strongly Supported Behavior
 
-**Version:** 0.2-draft
+**Version:** 0.2
 **Status:** Observed — Direct PASS
 **Result reference:** [`T001-run-001-evaluation.md`](results/T001-run-001-evaluation.md)
 

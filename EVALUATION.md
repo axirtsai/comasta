@@ -1,7 +1,7 @@
 # COMASTA Evaluation Model
 
-**Version:** 0.2-draft
-**Status:** Experimental v0.2-draft — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
+**Version:** 0.2
+**Status:** Experimental v0.2 — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated
 
 COMASTA uses categorical, non-additive evaluation. It does not calculate psychological scores, behavioral probabilities, or a most-likely action.
 
@@ -192,7 +192,7 @@ The Expression assessment must not inherit the Action result automatically. It u
 
 When several Candidate Actions are submitted, evaluate each independently. Comparative notes may identify differences in support structure, missing context, or bridge construction.
 
-Do not rank the actions, assign likelihoods, or state which one the character would really choose unless a separate system outside COMASTA is explicitly being used. Such a system is not defined by v0.2-draft.
+Do not rank the actions, assign likelihoods, or state which one the character would really choose unless a separate system outside COMASTA is explicitly being used. Such a system is not defined by v0.2.
 
 ## 13. No automatic repair
 
