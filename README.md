@@ -1,10 +1,12 @@
-# COMASTA
+# COMASTA [English](#english) · [繁體中文](#zh-tw)
 
 **Human-Centered Character Action Interpretability Specification**
 
 > **COMASTA v0.2**<br>
 > **Experimental v0.2 — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated**
+<a name="english"></a>
 
+## English
 COMASTA is an experimental specification for evaluating whether an externally supplied character action can be understood from the character and situation information currently available.
 
 Its central principle is:
@@ -124,6 +126,7 @@ The result index distinguishes the preserved v0.1 pilot from v0.2 observations a
 COMASTA may report that a Candidate Action is unsupported by current material. The author may still choose that action deliberately. `UNSUPPORTED` does not mean impossible, incorrect, or forbidden.
 
 Authorial intention may define the scope of interpretation, including protected ambiguity. It does not count as behavioral evidence and cannot upgrade an unsupported action.
+<a name="zh-tw"></a>
 
 ## 繁體中文摘要
 
@@ -154,7 +157,7 @@ COMASTA 不是：
 - 人格模型；
 - 心理學模型；
 - 角色生成器；
-- 作者判斷的替代品。
+- 創作者判斷的替代品。
 
 它評估的是**目前材料所能提供的解釋支持**，而不是人物真正的心理真相，也不是最可能發生的下一步。
 
@@ -253,7 +256,7 @@ COMASTA 不要求人物只有一個真正動機。
 
 COMASTA 不會因為需要產生一個清楚答案，就自行決定其中哪一個才是「真正原因」。
 
-### 作者仍然保有最後決定權
+### 創作者仍然保有最後決定權
 
 COMASTA 可以判定：
 
@@ -264,13 +267,13 @@ COMASTA 可以判定：
 - 不可能；
 - 錯誤；
 - 禁止；
-- 作者不能這樣寫。
+- 創作者不能這樣寫。
 
 它只代表：
 
 > **以目前提供的材料而言，這個行為還沒有足夠的敘事支持。**
 
-作者仍然可以刻意保留空白、製造斷裂，或選擇一個尚未被完全解釋的行為。
+創作者仍然可以刻意保留空白、製造斷裂，或選擇一個尚未被完全解釋的行為。
 
 COMASTA 是檢查工具，不是創作裁判。
 
