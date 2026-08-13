@@ -1,12 +1,14 @@
-# COMASTA [English](#english) · [繁體中文](#zh-tw)
+[English](#english) · [繁體中文](#zh-tw)
+<a name="english"></a>
+
+## English
+# COMASTA 
 
 **Human-Centered Character Action Interpretability Specification**
 
 > **COMASTA v0.2**<br>
 > **Experimental v0.2 — Adversarially evaluated under limited recorded conditions; not scientifically or generally validated**
-<a name="english"></a>
 
-## English
 COMASTA is an experimental specification for evaluating whether an externally supplied character action can be understood from the character and situation information currently available.
 
 Its central principle is:
@@ -126,6 +128,8 @@ The result index distinguishes the preserved v0.1 pilot from v0.2 observations a
 COMASTA may report that a Candidate Action is unsupported by current material. The author may still choose that action deliberately. `UNSUPPORTED` does not mean impossible, incorrect, or forbidden.
 
 Authorial intention may define the scope of interpretation, including protected ambiguity. It does not count as behavioral evidence and cannot upgrade an unsupported action.
+
+[↑ Back to English / 返回英文](#english)
 <a name="zh-tw"></a>
 
 ## 繁體中文摘要
