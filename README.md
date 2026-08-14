@@ -17,6 +17,14 @@ Its central principle is:
 
 COMASTA evaluates interpretive support. It does not predict what a character will do, assign behavioral probabilities, model a personality, diagnose psychology, generate characters, or replace authorial judgment.
 
+COMASTA does not require characters to behave logically or consistently.
+
+Characters may contradict themselves, change, hesitate, regress, or act against established patterns.
+
+The specification constrains the interpretation, not the character.
+
+Its purpose is to ask whether our explanation of an action is grounded in the material currently available — not whether a person has behaved according to a logical rule.
+
 ## What v0.2 evaluates
 
 An assessment begins with a `Candidate Action`. When necessary, the action and its specific form of expression may be evaluated as separate targets.
